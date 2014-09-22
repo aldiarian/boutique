@@ -51,22 +51,6 @@ img {
 
 
 
-/*------------------------------------*\
-    $ELEMENTOS-TITULAR SECCIÓN
-\*------------------------------------*/
-
-.titular-seccion{
-  font-family: $baseheadingfont;
-  font-weight: lighter;
-  color:$basecolor_1;
-  padding:0 1em;
-  background-color: $claro_2;
-  text-transform: uppercase;
-  @include font-size(20);
-  display: inline-block;
-
-}
-
 
 
 /*------------------------------------*\

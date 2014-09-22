@@ -166,6 +166,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/fondo_madera2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79826,
+		"inputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
+		"outputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Melamine-wood-004.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 396537,
+		"inputAbbreviatedPath": "\/images\/Melamine-wood-004.png",
+		"outputAbbreviatedPath": "\/images\/Melamine-wood-004.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/includes\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -718,6 +740,17 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/wood_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.65032e+06,
+		"inputAbbreviatedPath": "\/wood_2.jpg",
+		"outputAbbreviatedPath": "\/wood_2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [

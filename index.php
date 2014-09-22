@@ -29,7 +29,7 @@
 	<section class="menu-principal">
 		<div class="int contenedor">
 			<section class="logo_principal">
-				<a href="index.html"><img src="images/logo_boutique_header.svg" alt="ir a inicio" title="ir a inicio"></a>
+				<a href="index.php"><img src="images/logo_boutique_header.svg" alt="ir a inicio" title="ir a inicio"></a>
 			</section>
 			<section class="menu-principal-cabecera">
 				<nav >
@@ -39,16 +39,27 @@
 						<li><a href="javascript:void(0)">LA TIENDA</a></li>
 						<li><a href="javascript:void(0)">CONTACTO</a></li>
 						<li><a href="javascript:void(0)">NOTICIAS</a></li>
-						<li>
-							<ul>
-								<li class="iconos">
-									<a href=""><img src="images/icono-tel.svg" alt="icono telefono" title="llamar por teléfono"></a>
-									<a href=""><img src="images/icono-sobre.svg" alt="enviar un mail" title="enviar mail"> </a>
-									<a href=""><img src="images/icono-face.svg" alt="ira a facebook" title="ir a facebook"></a>
-									<a href=""><img src="images/icono-tuit.svg" alt="ira a twitter" title="ir a twitter"></a>
-								</li>
-							</ul>
-						</li>
+						<div class="nav_direcciones">
+							<li>
+								<ul>
+									<li class="iconos">
+										<a href="" id="icono-tel"><img src="images/icono-tel.svg" alt="icono telefono" title="llamar por teléfono"></a>
+										<a href="" id="icono-sobre"><img src="images/icono-sobre.svg" alt="enviar un mail" title="enviar mail"> </a>
+										<a href=""><img src="images/icono-face.svg" alt="ira a facebook" title="ir a facebook"></a>
+										<a href=""><img src="images/icono-tuit.svg" alt="ira a twitter" title="ir a twitter"></a>
+									</li>
+								</ul>
+							</li>
+							<li class="direccion">
+								<address>
+									<p>	C/ Aragonés 3B
+										07012 Palma de Mallorca
+										Illes Balears - Spain <br> 900 123 123
+									</p>
+								</address>
+								
+							</li>
+						</div>
 					</ul>
 				</nav>
 			</section>
@@ -65,7 +76,40 @@
 	</article>
 </section>
 
+	<article class="titular-seccion">
+		<h2>Productos destacados</h2>
+	</article>
+<section class="destacados ">
 
+	<article class="cabecera-destacado">
+		<a href="">
+			<img src="http://lorempixel.com/280/160/" alt="">
+			<div class="texto-desta">
+				<h2>Producto destacado</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ducimus voluptatibus, dicta mollitia exercitationem sequi, vitae, molestiae, fugiat perferendis cumque accusantium eveniet quas laudantium ut! Minus sit molestiae vero perspiciatis. </p>
+			</div>
+		</a>
+	</article>
+	<article class="cabecera-destacado">
+		<a href="">
+			<img src="http://lorempixel.com/280/160/" alt="">
+			<div class="texto-desta">
+				<h2>Producto destacado</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+			</div>
+		</a>
+	</article>
+	<article class="cabecera-destacado">
+		<a href="">
+			<img src="http://lorempixel.com/280/160/" alt="">
+			<div class="texto-desta">
+				<h2>Producto destacado</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ducimus voluptatibus, dicta mollitia exercitationem ss. </p>
+			</div>
+		</a>
+	</article>
+	
+</section>
 
 
 <?php  

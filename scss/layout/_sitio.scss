@@ -59,7 +59,18 @@ li{
 	overflow: hidden;
 }
 
-
+.flex{
+	display: flex;
+}
+.uno{
+	width: 100%;
+}
+.dos{
+	width: 50%;
+}
+.tres{
+	width: 33.333333%;
+}
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -70,10 +81,13 @@ li{
 
 	ul{
 		margin: 0px;
-		@include displayflex;
-		flex-direction:row;
-		 align-content:center;
+		display: flex;
+		align-content:center;
 		padding:0;
+		@media only screen and (min-width: $bp3) {
+			width: 550px;
+			float: right;
+		}
 	}
 	.grupo_uno{
 		width: 70%;
@@ -120,18 +134,24 @@ li{
 	}
 	.grupo_uno li:first-of-type a{
 		border-left: none;
+		@media only screen and (min-width: $bp3) {
+			border-left: 1px solid white;
+		}
+	}
+	.grupo_dos li:last-of-type a{
+		@media only screen and (min-width: $bp3) {
+			border-right: 1px solid white;
+		}
+		
 	}
 
 }
 
 
 .menu-principal{
-	background-image: url('../images/fondo_madera.jpg');
+	background-image: url('../images/Melamine-wood-004.png');
 	border-top: 1px solid white;
-	
-	@media only screen and (min-width: 1600px) {
-		background-size: cover;
-	}
+
 
 	.nav{
 		display:flex;
@@ -143,6 +163,12 @@ li{
 		margin-top: 1em;
 		@media only screen and (min-width: $bp2) {
 			justify-content:center;
+			align-items:center;
+			margin-bottom: 1em;
+		}
+		@media only screen and (min-width: $bp3) {
+			justify-content:flex-end;
+			margin:1em 0;
 		}
 		li{
 			width: 100%;
@@ -157,6 +183,7 @@ li{
 			margin: 0;
 		}
 		.iconos{
+			margin-top:1em;
 			a{
 				float: left;
 				&:hover{
@@ -167,13 +194,37 @@ li{
 			 img{
 				height: 30px;
 			}
+			@media only screen and (min-width: $bp2) {
+				margin-top:0;
+				#icono-tel, #icono-sobre{
+					display : none !important;
+					visibility : hidden;
+				}
+			}
+		}
+		.nav_direcciones{
+			margin:0 auto;
+			@media only screen and (min-width: $bp2) {
+				margin:0;
+			}
+		}
+		.direccion{
+			color:white;
+			max-width: 50%;
+			text-align: center;
+			margin:0 auto;
+			@media only screen and (min-width: $bp2) {
+				display : none !important;
+				visibility : hidden;
+			}
 		}
 	}
 	a{
 		color:white;
-		padding:15px 12px;
+		padding:5px 12px;
 		display: block;
 		text-decoration: none;
+		width: 100%;
 		@include transition(0.1s);
 		&:hover{
 			background-color:$claro_1;
@@ -185,17 +236,21 @@ li{
 
 .cabecera_pagina{
 	.logo_principal{
-		width: 80%;
 		margin: 0 auto;
 		display: flex;
 		align-items:center;
 		justify-content:center;
-
-
+		@media only screen and (min-width: $bp3) {
+			justify-content:flex-start;
+			position: absolute;
+		}
 	}
 	.logo_principal a{
 		padding: 0;
-		width: 170px;
+		width: 150px;
+		@media only screen and (min-width: $bp3) {
+			width: 138px;
+		}
 		&:hover{
 			background:transparent;
 		}
@@ -235,4 +290,38 @@ li{
 
 	}
 
+}
+
+
+
+/*------------------------------------*\
+    $resto pagina
+\*------------------------------------*/
+
+.destacados{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.titular-seccion{
+	h2{
+		text-transform: uppercase;
+		background-color: $claro_1;
+		margin:0;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.cabecera-destacado{
+	text-align: center;
+	border:1px solid black;
+	padding:2em 3em;
+	width: 100%;
+	@media only screen and (min-width: $bp2){ 
+		width: 50%;
+	}
+	@media only screen and (min-width : $bp3){
+		width: 33.333333%;
+	}
 }

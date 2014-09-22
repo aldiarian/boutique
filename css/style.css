@@ -247,236 +247,6 @@ a {
     outline: 0; }
 
 /*------------------------------------*\
-    $BOTONES
-\*------------------------------------*/
-/*
- * Definimos los botones y sus variantes
- */
-/**
-* .btn es la clase principal para definir un botón
-*/
-.btn {
-  display: inline-block;
-  line-height: 2.25em;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 100%;
-  white-space: nowrap;
-  background-color: #c65d17;
-  border: 2px solid #262626;
-  font-weight: lighter;
-  font-family: "Aleo";
-  cursor: pointer;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  	/**
-   	* Nadie quiere un botón con texto subrayado cuando
-   	* hacemos hover.
-   	*/ }
-  .btn:hover {
-    text-decoration: none; }
-  .btn:active, .btn:focus {
-    outline: none; }
-  .btn:visited {
-    color: #262626; }
-
-/*------------------------------------*\
-    $BOTONES-VARIANTES
-\*------------------------------------*/
-/**
- * Variantes de los botones: color para dar sensaciones.
- *
- */
-/**
-* Inputs con estilo de botones
-*/
-input[type="submit"].btn:hover {
-  border-color: #262626; }
-
-/**
-* Botón no disponible
-*/
-.btn--disabled {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  cursor: default; }
-
-/**
-* Botón de Error
-*/
-.btn--error {
-  background-color: #da4f49;
-  color: #48110f; }
-  .btn--error:hover {
-    color: #fcf3f3; }
-  .btn--error:visited {
-    color: #48110f; }
-
-/**
-* Botón de Info
-*/
-.btn--info {
-  background-color: #a5dddf;
-  color: #308588; }
-  .btn--info:hover {
-    color: white; }
-  .btn--info:visited {
-    color: #308588; }
-
-/**
-* Botón principal
-*/
-.btn--primary {
-  background-color: #344814;
-  color: white; }
-  .btn--primary:hover {
-    color: #a2d058; }
-  .btn--primary:visited {
-    color: black; }
-
-/**
-* Botón de OK
-*/
-.btn--success {
-  background-color: #5bb75b;
-  color: #153115; }
-  .btn--success:hover {
-    color: #e9f5e9; }
-  .btn--success:visited {
-    color: #153115; }
-
-/**
-* Botón de advertencia
-*/
-.btn--warning {
-  background-color: #da4f49;
-  color: #48110f; }
-  .btn--warning:hover {
-    color: #fcf3f3; }
-  .btn--warning:visited {
-    color: #48110f; }
-
-.btn--inactive,
-.btn--inactive:hover,
-.btn--inactive:active,
-.btn--inactive:focus {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  cursor: default; }
-
-/*------------------------------------*\
-    $BOTONES-TAMAÑOS
-\*------------------------------------*/
-/**
- * Variantes de los botones por tamaño.
- *
- */
-.btn--mini {
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  line-height: 1.5; }
-
-.btn--small {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  line-height: 2; }
-
-.btn--large {
-  padding-right: 3em;
-  padding-left: 3em;
-  line-height: 3; }
-
-/*------------------------------------*\
-    $BOTONES-GRUPOS
-\*------------------------------------*/
-/**
- * Con esta clase podemos agrupar los botones
- * en grupos horizontales.
- *
- */
-.btn--group {
-  position: relative;
-  *margin-left: .3em; }
-
-.btn--group .btn {
-  position: relative;
-  border-radius: 0;
-  float: left;
-  margin-left: -1px; }
-
-.btn--group .btn:first-child {
-  margin-left: 0;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 2px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-
-.btn--group .btn:last-child {
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-
-.btn--group .btn.large:first-child {
-  margin-left: 0;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 0;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-
-.btn--group .btn.large:last-child {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 2px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 2px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-
-/*------------------------------------*\
     $ELEMENTOS
 \*------------------------------------*/
 hr {
@@ -509,20 +279,6 @@ img {
 
 .img--circle {
   border-radius: 100%; }
-
-/*------------------------------------*\
-    $ELEMENTOS-TITULAR SECCIÓN
-\*------------------------------------*/
-.titular-seccion {
-  font-family: "Aleo";
-  font-weight: lighter;
-  color: #954814;
-  padding: 0 1em;
-  background-color: #fef7d1;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
-  display: inline-block; }
 
 /*------------------------------------*\
     $ELEMENTOS-FIGURE
@@ -759,6 +515,22 @@ li {
   margin: 0 auto;
   overflow: hidden; }
 
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.uno {
+  width: 100%; }
+
+.dos {
+  width: 50%; }
+
+.tres {
+  width: 33.333333%; }
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -767,21 +539,18 @@ li {
   .zona-cliente ul {
     margin: 0px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
     padding: 0; }
+    @media only screen and (min-width: 50em) {
+      .zona-cliente ul {
+        width: 550px;
+        float: right; } }
   .zona-cliente .grupo_uno {
     width: 70%; }
     .zona-cliente .grupo_uno li {
@@ -817,14 +586,16 @@ li {
       color: #3a2316; }
   .zona-cliente .grupo_uno li:first-of-type a {
     border-left: none; }
+    @media only screen and (min-width: 50em) {
+      .zona-cliente .grupo_uno li:first-of-type a {
+        border-left: 1px solid white; } }
+  @media only screen and (min-width: 50em) {
+    .zona-cliente .grupo_dos li:last-of-type a {
+      border-right: 1px solid white; } }
 
 .menu-principal {
-  background-image: url("../images/fondo_madera.jpg");
+  background-image: url("../images/Melamine-wood-004.png");
   border-top: 1px solid white; }
-  @media only screen and (min-width: 1600px) {
-    .menu-principal {
-      -webkit-background-size: cover;
-      background-size: cover; } }
   .menu-principal .nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -851,7 +622,21 @@ li {
         -webkit-justify-content: center;
         -moz-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 1em; } }
+    @media only screen and (min-width: 50em) {
+      .menu-principal .nav {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin: 1em 0; } }
     .menu-principal .nav li {
       width: 100%;
       display: -webkit-box;
@@ -870,20 +655,43 @@ li {
     .menu-principal .nav ul {
       padding: 0;
       margin: 0; }
-    .menu-principal .nav .iconos a {
-      float: left; }
-      .menu-principal .nav .iconos a:hover {
-        -webkit-opacity: 0.5;
-        -moz-opacity: 0.5;
-        opacity: 0.5;
-        background: none; }
-    .menu-principal .nav .iconos img {
-      height: 30px; }
+    .menu-principal .nav .iconos {
+      margin-top: 1em; }
+      .menu-principal .nav .iconos a {
+        float: left; }
+        .menu-principal .nav .iconos a:hover {
+          -webkit-opacity: 0.5;
+          -moz-opacity: 0.5;
+          opacity: 0.5;
+          background: none; }
+      .menu-principal .nav .iconos img {
+        height: 30px; }
+      @media only screen and (min-width: 37.5em) {
+        .menu-principal .nav .iconos {
+          margin-top: 0; }
+          .menu-principal .nav .iconos #icono-tel, .menu-principal .nav .iconos #icono-sobre {
+            display: none !important;
+            visibility: hidden; } }
+    .menu-principal .nav .nav_direcciones {
+      margin: 0 auto; }
+      @media only screen and (min-width: 37.5em) {
+        .menu-principal .nav .nav_direcciones {
+          margin: 0; } }
+    .menu-principal .nav .direccion {
+      color: white;
+      max-width: 50%;
+      text-align: center;
+      margin: 0 auto; }
+      @media only screen and (min-width: 37.5em) {
+        .menu-principal .nav .direccion {
+          display: none !important;
+          visibility: hidden; } }
   .menu-principal a {
     color: white;
-    padding: 15px 12px;
+    padding: 5px 12px;
     display: block;
     text-decoration: none;
+    width: 100%;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
     .menu-principal a:hover {
@@ -891,7 +699,6 @@ li {
       color: #3a2316; }
 
 .cabecera_pagina .logo_principal {
-  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -908,9 +715,20 @@ li {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media only screen and (min-width: 50em) {
+    .cabecera_pagina .logo_principal {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      position: absolute; } }
 .cabecera_pagina .logo_principal a {
   padding: 0;
-  width: 170px; }
+  width: 150px; }
+  @media only screen and (min-width: 50em) {
+    .cabecera_pagina .logo_principal a {
+      width: 138px; } }
   .cabecera_pagina .logo_principal a:hover {
     background: transparent; }
 
@@ -954,6 +772,38 @@ li {
     font-weight: 300;
     font-style: italic;
     line-height: 35px; }
+
+/*------------------------------------*\
+    $resto pagina
+\*------------------------------------*/
+.destacados {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.titular-seccion h2 {
+  text-transform: uppercase;
+  background-color: #ffefa3;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.cabecera-destacado {
+  text-align: center;
+  border: 1px solid black;
+  padding: 2em 3em;
+  width: 100%; }
+  @media only screen and (min-width: 37.5em) {
+    .cabecera-destacado {
+      width: 50%; } }
+  @media only screen and (min-width: 50em) {
+    .cabecera-destacado {
+      width: 33.333333%; } }
 
 /*------------------------------------*\
     $BREAKPOINTS
