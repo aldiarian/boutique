@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Reg.eot'); /* IE9 Compat Modes */
+  src: url('Lato-Reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Lato-Reg.woff') format('woff'), /* Modern Browsers */
+       url('Lato-Reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Lato-Reg.svg#48e70b8825d557df57af3e4f7d4c31be') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

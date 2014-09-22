@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'BrandonTextBold';
+  src: url('hvdfonts-brandontext-bold.eot'); /* IE9 Compat Modes */
+  src: url('hvdfonts-brandontext-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('hvdfonts-brandontext-bold.woff') format('woff'), /* Modern Browsers */
+       url('hvdfonts-brandontext-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('hvdfonts-brandontext-bold.svg#2f266d0505d8570935d6167d9364a55d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
