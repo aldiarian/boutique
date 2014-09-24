@@ -1,0 +1,21 @@
+
+.cont_latienda{
+	display: flex;
+	flex-wrap: wrap;
+	section[class*="latienda"]{
+		padding:0 1em;
+		text-align: center;
+	}
+}
+
+.galeria_latienda{
+	display: flex;
+	flex-direction:column;
+	padding:0;
+	li{
+		display: block;
+		margin-right: 6px;
+		margin-bottom: 6px;
+		width: 100%;
+	}
+}
