@@ -126,11 +126,13 @@ $basefontsize :      16;
  * Brand stuff
  */
 $basecolor     	:rgb(52,72,20); 
+$basecolor_light  :lighten($basecolor, 10%);
 $basecolor_1    :rgb(149,72,20); 
 $basecolor_2    :rgb(198,93,23); 
 $basecolor_osc  :rgb(58,35,22); 
 $claro_1		:rgb(255,239,163);
 $claro_2		:rgb(254,247,209);
+$claro_3        :rgba(254,247,209,0.5);
 $negro			:rgb(38,38,38);
 $blanco         :white;
 

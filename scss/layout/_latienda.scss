@@ -5,17 +5,133 @@
 	section[class*="latienda"]{
 		padding:0 1em;
 		text-align: center;
+
+	}
+}
+
+
+
+.latienda_galeria{
+	@media only screen and (min-width : $bp4){
+		width: 40%;
 	}
 }
 
 .galeria_latienda{
 	display: flex;
-	flex-direction:column;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
 	padding:0;
+	max-width: 60%;
+	@media only screen and (min-width : $bp4){
+		max-width: 100%;
+	}
+	margin:0 auto;
 	li{
 		display: block;
 		margin-right: 6px;
 		margin-bottom: 6px;
-		width: 100%;
+		// width: 200px;
+		// height: 135px;
+			@media only screen and (min-width : $bp2){
+				width: 45%;
+			}
+	}
+}
+.latienda_texto{
+		@media only screen and (min-width : $bp4){
+			width: 60%;
+			text-align: left !important;
+		}
+}
+
+
+.latienda-datos{
+	padding:1em;
+	margin-bottom: 4em;
+
+	@media only screen and (min-width : $bp4){
+		display: flex;
+	}
+}
+.plano{
+	text-align: center;
+		@media only screen and (min-width : $bp4){
+			width: 50%;
+			text-align: left;
+		}
+}
+.latienda-dir{
+	margin:0 auto;
+	max-width: 500px;
+	font-family: $baseheadingfont;
+	display: flex;
+	flex-direction:row;
+	@include font-size(14);
+	&>article{
+		width:50%;
+		padding-top:1em;
+			@media only screen and (min-width : $bp4){
+				width: 100%;
+				padding-top: 0;
+				padding-left: 15%;
+			}
+	}
+		@media only screen and (min-width : $bp4){
+			flex-direction:column;
+			width:25%
+		}
+}
+
+.contactos{
+	margin:0 auto;
+	max-width: 500px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	padding:0;
+	width: 100%;
+	@media only screen and (min-width : $bp4){
+		width: 25%;
+	}
+	.elemento{
+		width: 50%;
+		padding: 2em 0;
+		text-align: center;
+		@media only screen and (min-width : $bp1){
+			text-align: left;
+		}
+		@media only screen and (min-width : $bp4){
+			width: 100%;
+			padding:0;
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+		img{
+			width: 35px;
+			margin:0 auto;
+			@media only screen and (min-width : $bp1){
+				display: inline-table;
+				margin-right: 5px;
+			}
+			
+		}
+		p{
+			@include font-size(14);
+			font-family: $baseheadingfont;
+			margin: 0;
+			padding:0;
+			text-align: center;
+			@media only screen and (min-width : $bp1){
+				display:inline-table;
+
+			}
+			@media only screen and (min-width : $bp4){
+				line-height: 2.3em;
+			}
+		}
+
 	}
 }

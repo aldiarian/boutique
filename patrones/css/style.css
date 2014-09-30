@@ -981,7 +981,7 @@ p {
     transition: 0.1s;
     font-size: 11px;
     font-size: 0.6875rem;
-    border-left: 1px solid white; }
+    border-left: 1px solid rgba(254, 247, 209, 0.5); }
     .zona-cliente a:hover {
       background-color: #ffefa3;
       color: #3a2316; }
@@ -989,14 +989,14 @@ p {
     border-left: none; }
     @media only screen and (min-width: 50em) {
       .zona-cliente .grupo_uno li:first-of-type a {
-        border-left: 1px solid white; } }
+        border-left: 1px solid rgba(254, 247, 209, 0.5); } }
   @media only screen and (min-width: 50em) {
     .zona-cliente .grupo_dos li:last-of-type a {
-      border-right: 1px solid white; } }
+      border-right: 1px solid rgba(254, 247, 209, 0.5); } }
 
 .menu-principal {
   background-image: url("../images/Melamine-wood-004.png");
-  border-top: 1px solid white; }
+  border-top: 1px solid rgba(254, 247, 209, 0.5); }
   .menu-principal .nav {
     display: flex;
     flex-direction: row;
@@ -1127,7 +1127,8 @@ p {
   border: 2px solid white;
   background-color: #954814;
   color: white;
-  text-align: center; }
+  text-align: center;
+  opacity: 0.9; }
   .cabecera_texto h2 {
     margin-bottom: 0; }
   .cabecera_texto h3 {

@@ -45,6 +45,10 @@ $media-queries-supported : true;
 
 @import "layout/latienda.scss";
 
+@import "layout/productos.scss";
+
+@import "componentes/_responsive-tabs.scss";
+
 // @import "componentes/texturas.scss";
 
 @import "layout/breakpoints.scss";

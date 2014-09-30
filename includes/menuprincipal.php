@@ -24,7 +24,7 @@
 				<nav >
 					<ul class="nav">
 						<li><a href="javascript:void(0)">INICIO</a></li>
-						<li><a href="javascript:void(0)">PRODUCTOS</a></li>
+						<li><a href="../productos.php">PRODUCTOS</a></li>
 						<li><a href="../latienda.php">LA TIENDA</a></li>
 						<li><a href="javascript:void(0)">CONTACTO</a></li>
 						<li><a href="javascript:void(0)">NOTICIAS</a></li>

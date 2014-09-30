@@ -1,0 +1,35 @@
+.titular{
+	text-align: center;
+	padding: 3em 0;
+	h1{
+		text-transform: uppercase;
+		margin-bottom:5px;
+		font-weight: lighter;
+	}
+	h2{
+		@include font-size(18);
+		font-weight: lighter;
+	}
+}
+
+.tipodete{
+  width: 100%;
+  border:1px solid black;
+  display: flex;
+  flex-wrap:wrap;
+  text-align: left;
+}
+
+.item-te{
+  display: table;
+  width: 100%;
+  input{
+    display: table-cell;
+  }
+  p{
+    display:inline;
+    text-transform: uppercase;
+  }
+}
+
+
