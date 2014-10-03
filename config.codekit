@@ -133,6 +133,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/csscheckbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1777,
+		"inputAbbreviatedPath": "\/images\/csscheckbox.png",
+		"outputAbbreviatedPath": "\/images\/csscheckbox.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/descarga.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -195,6 +206,17 @@
 		"initialSize": 79826,
 		"inputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
 		"outputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Map-boutique-pq.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108506,
+		"inputAbbreviatedPath": "\/images\/Map-boutique-pq.png",
+		"outputAbbreviatedPath": "\/images\/Map-boutique-pq.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -41,10 +41,11 @@
 							</li>
 							<li class="direccion">
 								<address>
-									<p>	C/ Aragonés 3B
+										<a href="http://rx.hu/IJiV" target="blank">
+										C/ Aragonés 3B
 										07012 Palma de Mallorca
 										Illes Balears - Spain <br> 900 123 123
-									</p>
+										</a>
 								</address>
 								
 							</li>

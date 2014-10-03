@@ -8,6 +8,11 @@
     background-color:#DBDFD7;
     display: block;
     text-align: center;
+    font-family: $baseheadingfont;
+    border-bottom:1px solid white;
+        @media only screen and (min-width : $bp2){
+            border: 0;
+        }
 }
 
 .r-tabs .r-tabs-nav {

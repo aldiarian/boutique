@@ -96,9 +96,6 @@
 .lato {
   font-family: 'Lato' !important; }
 
-.aleo {
-  font-family: 'Aleo'; }
-
 /*------------------------------------*\
     $TAMAÑOS
 \*------------------------------------*/
@@ -648,7 +645,17 @@ p {
       color: white;
       max-width: 50%;
       text-align: center;
+      font-weight: lighter;
       margin: 0 auto; }
+      .menu-principal .nav .direccion a {
+        text-decoration: underline;
+        font-weight: lighter; }
+        .menu-principal .nav .direccion a:hover {
+          background: none;
+          color: white;
+          -webkit-opacity: 0.5;
+          -moz-opacity: 0.5;
+          opacity: 0.5; }
       @media only screen and (min-width: 37.5em) {
         .menu-principal .nav .direccion {
           display: none !important;
@@ -707,7 +714,7 @@ p {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -898,11 +905,14 @@ footer {
     @media only screen and (min-width: 50em) {
       .footer_conte article[class*="footer"] {
         padding-bottom: 1em; } }
-    .footer_conte article[class*="footer"] p {
+    .footer_conte article[class*="footer"] p, .footer_conte article[class*="footer"] .footer-direcc {
       font-size: 13px;
       font-size: 0.8125rem;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-weight: lighter; }
+    .footer_conte article[class*="footer"] .footer-direcc {
+      text-decoration: underline; }
     .footer_conte article[class*="footer"] img {
       height: 90px;
       margin-bottom: 1em; }
@@ -922,11 +932,12 @@ footer {
       opacity: 0.5; }
 .footer_menu .menu {
   text-align: center;
-  padding-left: 10px; }
+  padding-left: 0px; }
   .footer_menu .menu a {
     font-size: 13px;
     font-size: 0.8125rem;
-    font-weight: lighter; }
+    font-weight: lighter;
+    line-height: 2.5em; }
 
 .footer-legales {
   margin-bottom: 2em; }
@@ -1117,9 +1128,18 @@ footer {
     font-size: 1.125rem;
     font-weight: lighter; }
 
-.tipodete {
+.productos a {
+  font-family: "Roboto Slab", serif; }
+
+.descripcion-producto {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  text-align: left; }
+
+ul[class*="items"] {
+  padding: 0;
   width: 100%;
-  border: 1px solid black;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1129,15 +1149,56 @@ footer {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: left; }
+  ul[class*="items"] .item {
+    width: 50%;
+    padding: 0.5em 0; }
+    @media only screen and (min-width: 37.5em) {
+      ul[class*="items"] .item {
+        width: 33.333333%; } }
+    @media only screen and (min-width: 50em) {
+      ul[class*="items"] .item {
+        width: 25%; } }
 
-.item-te {
-  display: table;
-  width: 100%; }
-  .item-te input {
-    display: table-cell; }
-  .item-te p {
-    display: inline;
+#horizontalTab {
+  padding: 0 1em 2em 1em; }
+  #horizontalTab div[id*="tab-"] {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid #344814; }
+    #horizontalTab div[id*="tab-"] h5 {
+      line-height: 1.3em; }
+  #horizontalTab input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  #horizontalTab input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 29px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    cursor: pointer;
     text-transform: uppercase; }
+  #horizontalTab input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -24px; }
+  #horizontalTab label.css-label {
+    background-image: url("../../images/csscheckbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
 
 .productos {
   text-align: center; }
@@ -1147,7 +1208,12 @@ footer {
   padding: 10px 3em;
   background-color: #DBDFD7;
   display: block;
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  border-bottom: 1px solid white; }
+  @media only screen and (min-width: 37.5em) {
+    .r-tabs-anchor {
+      border: 0; } }
 
 .r-tabs .r-tabs-nav {
   margin: 0;

@@ -14,12 +14,16 @@
 		</div>
 	</article>
 	<article class="footer_direccion">
-		<img src="http://lorempixel.com/140/90/" alt="plano tienda google maps" title="ir a google maps">
-		<p>
+		
+		<address>
+		<a class="footer-direcc" href="http://rx.hu/IJiV" target="blank" title="ir a google maps">
+			<img src="images/Map-boutique-pq.png" alt="plano tienda google maps" title="ir a google maps"> <br>
 			C/ Aragonés 3B <br>
 			07012 Palma de Mallorca <br>
-			Illes Balears - Spain
-		</p>
+			Illes Balears - Spain <br> 900 123 123
+			</a>
+		</address>
+
 	</article>
 	<article class="footer_menu">
 		<section class="iconos">
