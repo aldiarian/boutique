@@ -496,6 +496,25 @@ p {
   width: 33.333333%; }
 
 /*------------------------------------*\
+    $botones	
+\*------------------------------------*/
+.btn {
+  background-color: #c65d17;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 5px 1.5em; }
+  .btn:hover {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5; }
+
+/*------------------------------------*\
     $HEADER
 \*------------------------------------*/
 .zona-cliente {
@@ -1139,6 +1158,7 @@ footer {
 
 ul[class*="items"] {
   padding: 0;
+  margin-bottom: 2em;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1151,7 +1171,8 @@ ul[class*="items"] {
   text-align: left; }
   ul[class*="items"] .item {
     width: 50%;
-    padding: 0.5em 0; }
+    padding: 0.5em 0;
+    margin-bottom: 1em; }
     @media only screen and (min-width: 37.5em) {
       ul[class*="items"] .item {
         width: 33.333333%; } }
@@ -1165,7 +1186,7 @@ ul[class*="items"] {
     max-width: 780px;
     margin: 0 auto;
     padding: 2em;
-    border: 1px solid #344814; }
+    border: 1px solid rgba(52, 72, 20, 0.2); }
     #horizontalTab div[id*="tab-"] h5 {
       line-height: 1.3em; }
   #horizontalTab input[type=checkbox].css-checkbox {
@@ -1181,24 +1202,85 @@ ul[class*="items"] {
     border: 0; }
   #horizontalTab input[type=checkbox].css-checkbox + label.css-label {
     padding-left: 29px;
-    height: 24px;
+    height: 20px;
     display: inline-block;
-    line-height: 24px;
+    line-height: 20px;
     background-repeat: no-repeat;
     background-position: 0 0;
     vertical-align: middle;
     cursor: pointer;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: lighter; }
   #horizontalTab input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -24px; }
+    background-position: 0 -20px; }
   #horizontalTab label.css-label {
-    background-image: url("../../images/csscheckbox.png");
+    background-image: url("../../images/checkbox02.png");
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+  #horizontalTab .descripcion-producto {
+    font-weight: 400; }
+    #horizontalTab .descripcion-producto span {
+      padding: 3px 8px;
+      background-color: #344814;
+      color: white;
+      margin-right: 5px;
+      -webkit-border-top-right-radius: 25px;
+      -webkit-border-bottom-right-radius: 25px;
+      -webkit-border-bottom-left-radius: 25px;
+      -webkit-border-top-left-radius: 25px;
+      -moz-border-radius-topright: 25px;
+      -moz-border-radius-bottomright: 25px;
+      -moz-border-radius-bottomleft: 25px;
+      -moz-border-radius-topleft: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-top-left-radius: 25px;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box; }
+  #horizontalTab button {
+    margin-top: 1em; }
+
+.mostrar_productos .titular p {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.productos_zona {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-position: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .productos_zona .prod {
+    max-width: 240px;
+    text-align: center;
+    padding: 0 10px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+    .productos_zona .prod:hover {
+      -webkit-opacity: 0.5;
+      -moz-opacity: 0.5;
+      opacity: 0.5; }
+    .productos_zona .prod img {
+      border: 1px solid #f5f1f1; }
+  .productos_zona .prod_text {
+    background-color: #f5f1f1;
+    padding: 0.3em; }
 
 .productos {
   text-align: center; }

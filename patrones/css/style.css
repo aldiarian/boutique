@@ -933,6 +933,25 @@ p {
   width: 33.333333%; }
 
 /*------------------------------------*\
+    $botones	
+\*------------------------------------*/
+.btn {
+  background-color: #c65d17;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 5px 1.5em; }
+  .btn:hover {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5; }
+
+/*------------------------------------*\
     $HEADER
 \*------------------------------------*/
 .zona-cliente {

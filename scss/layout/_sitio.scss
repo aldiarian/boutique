@@ -74,6 +74,29 @@ p{
 .tres{
 	width: 33.333333%;
 }
+
+
+
+/*------------------------------------*\
+    $botones	
+\*------------------------------------*/
+
+.btn{
+	background-color: $basecolor_2;
+	color:white;
+	font-family: $baseheadingfont;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+	@include font-size(18);
+	border:2px solid black;
+	cursor: pointer;
+	padding: 5px 1.5em;
+	&:hover{
+		@include opacity();
+	}
+}
+
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/

@@ -122,24 +122,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/checkbox_nuevo.png": {
+	"\/images\/checkbox01.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1047,
-		"inputAbbreviatedPath": "\/images\/checkbox_nuevo.png",
-		"outputAbbreviatedPath": "\/images\/checkbox_nuevo.png",
+		"initialSize": 537,
+		"inputAbbreviatedPath": "\/images\/checkbox01.png",
+		"outputAbbreviatedPath": "\/images\/checkbox01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/csscheckbox.png": {
+	"\/images\/checkbox02.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1777,
-		"inputAbbreviatedPath": "\/images\/csscheckbox.png",
-		"outputAbbreviatedPath": "\/images\/csscheckbox.png",
+		"initialSize": 1293,
+		"inputAbbreviatedPath": "\/images\/checkbox02.png",
+		"outputAbbreviatedPath": "\/images\/checkbox02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/checkbox03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1749,
+		"inputAbbreviatedPath": "\/images\/checkbox03.png",
+		"outputAbbreviatedPath": "\/images\/checkbox03.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

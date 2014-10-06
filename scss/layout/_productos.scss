@@ -23,6 +23,7 @@
 }
 ul[class*="items"]{
   padding: 0;
+  margin-bottom: 2em;
   width: 100%;
   display: flex;
   flex-wrap:wrap;
@@ -30,6 +31,7 @@ ul[class*="items"]{
   .item{
     width: 50%;
     padding: 0.5em 0;
+    margin-bottom: 1em;
       @media only screen and (min-width : $bp2){
         width: 33.333333%;
       }
@@ -47,7 +49,7 @@ ul[class*="items"]{
     max-width: 780px;
     margin: 0 auto;
     padding: 2em;
-    border:1px solid $basecolor;
+    border:1px solid rgba(52, 72, 20, 0.2);
     h5{
       line-height: 1.3em;
     }
@@ -58,20 +60,21 @@ ul[class*="items"]{
       }
   input[type=checkbox].css-checkbox + label.css-label {
     padding-left:29px;
-    height:24px; 
+    height:20px; 
     display:inline-block;
-    line-height:24px;
+    line-height:20px;
     background-repeat:no-repeat;
     background-position: 0 0;
     vertical-align:middle;
     cursor:pointer;
     text-transform: uppercase;
+    font-weight: lighter;
   }
   input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -24px;
+    background-position: 0 -20px;
   }
   label.css-label {
-    background-image:url("../../images/csscheckbox.png");
+    background-image:url("../../images/checkbox02.png");
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -79,5 +82,48 @@ ul[class*="items"]{
     -ms-user-select: none;
     user-select: none;
   }
+  
+  .descripcion-producto{
+    font-weight: 400;
+    span{
+      padding: 3px 8px;
+      background-color: $basecolor;
+      color:white;
+      margin-right: 5px;
+      @include border-radius(25px,25px,25px,25px);
+    }
+  }
+  button{
+    margin-top:1em;
+  }
+}
 
+.mostrar_productos .titular{
+  p{
+    margin-bottom: 0;
+    padding: 0;
+    @include font-size(18);
+  }
+}
+.productos_zona{
+  display: flex;
+  flex-wrap:wrap;
+  flex-position:center;
+  justify-content:center;
+  .prod{
+    max-width: 240px;
+    text-align: center;
+    padding: 0 10px;
+    @include transition(0.1s);
+    &:hover{
+      @include opacity(0.5);
+    }
+    img{
+      border:1px solid $grisclaro;
+    }
+  }
+  .prod_text{
+    background-color: $grisclaro;
+    padding: 0.3em;
+  }
 }
