@@ -29,9 +29,12 @@ ul[class*="items"]{
   flex-wrap:wrap;
   text-align: left;
   .item{
-    width: 50%;
+    width: 100%;
     padding: 0.5em 0;
     margin-bottom: 1em;
+      @media only screen and (min-width : $bp1){
+        width: 50%;
+      }
       @media only screen and (min-width : $bp2){
         width: 33.333333%;
       }

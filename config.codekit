@@ -41,6 +41,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/elproducto.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/elproducto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/fonts\/aleo\/Aleo-Bold-demo.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -121,6 +130,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/cafeina.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 669,
+		"inputAbbreviatedPath": "\/images\/cafeina.png",
+		"outputAbbreviatedPath": "\/images\/cafeina.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/checkbox01.png": {
 		"fileType": 32768,
@@ -217,6 +237,17 @@
 		"initialSize": 79826,
 		"inputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
 		"outputAbbreviatedPath": "\/images\/fondo_madera2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/foto-te.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41206,
+		"inputAbbreviatedPath": "\/images\/foto-te.jpg",
+		"outputAbbreviatedPath": "\/images\/foto-te.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -816,6 +847,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/layout\/_breakpoints.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/_breakpoints.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/layout\/_elproducto.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/layout\/_elproducto.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/_elproducto.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

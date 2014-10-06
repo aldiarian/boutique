@@ -1170,9 +1170,12 @@ ul[class*="items"] {
   flex-wrap: wrap;
   text-align: left; }
   ul[class*="items"] .item {
-    width: 50%;
+    width: 100%;
     padding: 0.5em 0;
     margin-bottom: 1em; }
+    @media only screen and (min-width: 30em) {
+      ul[class*="items"] .item {
+        width: 50%; } }
     @media only screen and (min-width: 37.5em) {
       ul[class*="items"] .item {
         width: 33.333333%; } }
@@ -1281,6 +1284,56 @@ ul[class*="items"] {
   .productos_zona .prod_text {
     background-color: #f5f1f1;
     padding: 0.3em; }
+
+.elproducto-seccion {
+  text-align: center;
+  padding: 2em; }
+
+.caracteristicas {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 270px;
+  margin: 0 auto; }
+  .caracteristicas li {
+    margin-bottom: 5px;
+    text-align: left;
+    position: relative; }
+    .caracteristicas li:before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: -23px;
+      top: 4px; }
+      @media only screen and (min-width: 37.5em) {
+        .caracteristicas li:before {
+          width: 60px;
+          height: 60px;
+          left: -68px;
+          top: -15px; } }
+  .caracteristicas .canti:before {
+    background-color: #d9e022 !important; }
+  .caracteristicas .tempe:before {
+    background-color: #f9af48 !important; }
+  .caracteristicas .tiempo:before {
+    background-color: #f7931e !important; }
+  .caracteristicas .cafeina:before {
+    background-color: #d68a58 !important; }
 
 .productos {
   text-align: center; }

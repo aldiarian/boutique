@@ -100,8 +100,8 @@
                 <label for="filtro" class="css-label">filtro</label>
             </li>
             </li> <li class="item" >
-                <input class="css-checkbox" type="checkbox" name="tipo_te" id="filtro" value="filtro">
-                <label for="filtro" class="css-label">filtro</label>
+                <input class="css-checkbox" type="checkbox" name="tipo_te" id="todos_prod" value="todos_prod">
+                <label for="todos_prod" class="css-label">todos</label>
             </li>
     
         </ul>
@@ -124,7 +124,7 @@
 
     <section class="productos_zona">
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -132,7 +132,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto muy largo tres lineas
@@ -140,7 +140,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -148,7 +148,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -156,7 +156,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -164,7 +164,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -172,7 +172,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -180,7 +180,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto muy largo tres lineas
@@ -188,7 +188,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -196,7 +196,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -204,7 +204,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto
@@ -212,7 +212,7 @@
             </a>
         </article>
         <article class="prod">
-            <a href="javascript:void(0)">
+            <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
                 <p class="prod_text">
                     Nombre del producto

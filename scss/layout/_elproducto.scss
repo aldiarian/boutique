@@ -1,0 +1,46 @@
+
+.elproducto-seccion{
+	text-align: center;
+	padding:2em;
+}
+
+.elproducto-texto{
+}
+.caracteristicas{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 270px;
+	margin:0 auto;
+	li{
+		margin-bottom: 5px;
+		text-align: left;
+		position: relative;
+		&:before{
+			content: "";
+			width: 18px;
+			height: 18px;
+			position:absolute;
+			left: -23px;
+			top: 4px;
+			@media only screen and (min-width : $bp2){
+				width: 60px;
+				height: 60px;
+				left: -68px;
+				top: -15px;
+			}
+		}
+	}
+	.canti:before{
+		background-color: $canti !important;
+	}
+	.tempe:before{
+		background-color: $tempe !important;
+	}
+	.tiempo:before{
+		background-color: $tiempo !important;
+	}
+	.cafeina:before{
+		background-color: $cafeina !important;
+	}
+}
