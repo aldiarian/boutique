@@ -90,10 +90,12 @@ ul[class*="items"]{
     font-weight: 400;
     span{
       padding: 3px 8px;
-      background-color: $basecolor;
-      color:white;
-      margin-right: 5px;
-      @include border-radius(25px,25px,25px,25px);
+      padding-left: 0;
+      font-weight: bolder;
+      // background-color: $basecolor;
+      // color:white;
+      // margin-right: 5px;
+      // @include border-radius(25px,25px,25px,25px);
     }
   }
   button{

@@ -66,19 +66,6 @@
     Time to insert a breakpoint!"
  */
 /*------------------------------------*\
-    $no-mediaquery-class
-\*------------------------------------*/
-/**
- * Si decides incluir lt-ie9 para dar soporte a navegadores sin estilos
- * esta es la clase que se añadirá a todos los elementos.
- */
-/*------------------------------------*\
-    $IMAGE-DIR
-\*------------------------------------*/
-/**
- * Con agregar esta variable a las imágenes declaradas en CSS apañamos:
- */
-/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 /**
@@ -201,8 +188,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 a {
   text-decoration: none;
   color: #344814; }
-  a:visited {
-    color: #344814; }
   a:hover {
     text-decoration: underline;
     color: #172009; }
@@ -916,7 +901,7 @@ p {
   font-weight: lighter; }
 
 .contenedor {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -950,6 +935,14 @@ p {
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
     opacity: 0.5; }
+
+.btn-nara {
+  background-color: #f9af48;
+  color: black; }
+
+.btn-pq {
+  font-size: 14px;
+  font-size: 0.875rem; }
 
 /*------------------------------------*\
     $HEADER

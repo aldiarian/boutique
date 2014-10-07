@@ -25,38 +25,6 @@ $bp5 : 62.500em;   //1000 px
 $bp6 : 75em;       //1200 px
 
 
-
-
-
-
-/*------------------------------------*\
-    $no-mediaquery-class
-\*------------------------------------*/
-/**
- * Si decides incluir lt-ie9 para dar soporte a navegadores sin estilos
- * esta es la clase que se añadirá a todos los elementos.
- */
-$no-mq-classname: ".ie8-sucks";
-
-
-
-
-
-/*------------------------------------*\
-    $IMAGE-DIR
-\*------------------------------------*/
-/**
- * Con agregar esta variable a las imágenes declaradas en CSS apañamos:
- */
-$image-dir: "../img";
-$fuentes: "../../fonts/";
-
- //Use: background-image:url("#{$image-dir}/btn.jpg");
-
-
-
-
-
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
@@ -70,10 +38,6 @@ $pagemaxwitdh :       80%;
 $radius :             2px;
 $hovertransition :    .3s;
 $animationtime :      .8s;
-
-
-
-
 
 
 /*------------------------------------*\

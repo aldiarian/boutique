@@ -57,7 +57,7 @@ p{
 	font-weight: lighter;
 }
 .contenedor{
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -96,6 +96,13 @@ p{
 	}
 }
 
+.btn-nara{
+	background-color: $tempe;
+	color:black;
+}
+.btn-pq{
+	@include font-size(14);
+}
 
 /*------------------------------------*\
     $HEADER

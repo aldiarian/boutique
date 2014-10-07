@@ -10,9 +10,9 @@ a {
 	text-decoration : none;
 	color : $linkcolor;
 
-	&:visited {
-		color : $linkcolorvisited;
-	}
+	// &:visited {
+	// 	color : $linkcolorvisited;
+	// }
 
 	&:hover {
 		text-decoration : underline;

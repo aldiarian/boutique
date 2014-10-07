@@ -2,45 +2,181 @@
 .elproducto-seccion{
 	text-align: center;
 	padding:2em;
+	@media only screen and (min-width : $bp3){
+		margin-top: 5em;
+		display: flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		position: relative;
+		.elproducto-texto{
+			width: 65%;
+			text-align: left;
+			order:2;
+			padding-left: 2em;
+		}
+		.elproducto-lafoto{
+			width: 35%;
+		}
+		.caracteristicas{
+			order:3;
+			margin:0;
+		}
+		.tabla-precios{
+			order:4;
+			position: absolute;
+			right: 1px;
+			.rwd-table{
+				max-width: none;
+			}
+		}
+
+	}
 }
 
-.elproducto-texto{
+.elproducto-lafoto{
+	margin-bottom: 2em;
+	img{
+		border: 1px solid $grisclaro;
+	}
 }
 .caracteristicas{
+	padding:0;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
-	width: 270px;
 	margin:0 auto;
+	width: 322px;
+	@include font-size(14);
+	span{
+		font-weight: bolder;
+		margin-left: 5px;
+	}
 	li{
 		margin-bottom: 5px;
 		text-align: left;
 		position: relative;
-		&:before{
-			content: "";
-			width: 18px;
-			height: 18px;
-			position:absolute;
-			left: -23px;
-			top: 4px;
-			@media only screen and (min-width : $bp2){
-				width: 60px;
-				height: 60px;
-				left: -68px;
-				top: -15px;
-			}
+		padding:0 5px;
+		display: flex;
+		align-items:center;
+		@media only screen and (min-width : $bp2){
+			line-height: 60px;
 		}
 	}
-	.canti:before{
+	.carac-icon{
+		width:40px;
+		height:40px;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		margin-right: 1em;
+
+	}
+	.canti .carac-icon{
 		background-color: $canti !important;
+		
 	}
-	.tempe:before{
+	.tempe .carac-icon{
 		background-color: $tempe !important;
+		
 	}
-	.tiempo:before{
+	.tiempo .carac-icon{
 		background-color: $tiempo !important;
+		
 	}
-	.cafeina:before{
+	.cafeina .carac-icon{
 		background-color: $cafeina !important;
+		
 	}
+	.cafeina-grados{
+		margin-left: 0.5em;
+	}
+}
+
+.rwd-table {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 322px;
+	border-collapse: collapse;
+
+	tr {
+		background-color: white;
+
+	}
+
+	th {
+		font-weight: inherit;
+		border:1px solid rgba(66, 92, 26, 0.13);
+		width: 6.5em; // magic number :( adjust according to your own content
+	display: inline-block;
+	background-color: $claro_2;
+	margin-right: 13px;
+	padding:8px;
+	display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+	}
+
+	td {
+	display: block; 
+	border:1px solid rgba(66, 92, 26, 0.13);
+	border-bottom: none;
+	&:first-child {
+		margin-top: .5em;
+	}
+	&:last-child {
+	  margin-bottom: .5em;
+	  border-bottom:1px solid rgba(66, 92, 26, 0.13);
+	}
+
+	span {
+
+	  width: 6.5em; // magic number :( adjust according to your own content
+	  display: inline-block;
+	  background-color: $claro_2;
+	  margin-right: 13px;
+	  padding:8px;
+	  
+	  @media only screen and (min-width : $bp2){
+	    display: none;
+	  }
+	}
+
+	}
+  
+	th, td {
+		text-align: left;
+		@media only screen and (min-width : $bp2){
+		  display: table-cell;
+		  padding: .25em .5em;
+		}
+	}
+  
+
+	input{
+		border: none;
+		padding: 3px;
+		margin: 0;
+		margin-left: -3px;
+		text-align: center;
+		background-color: $lightergrey ;
+		@include font-size(16);
+		font-family: $basefont;
+	}
+
+	.iva{
+		@include font-size(10);
+	}
+
+	@media only screen and (min-width : $bp2){
+		.ultimafila{
+			border-bottom: 1px solid rgba(66, 92, 26, 0.13);
+		}
+	}
+}
+
+.botones button{
+	margin:1em auto;
+	text-align: center;
+	display: block;
+}
+.btn-pq{
+	width: 180px;
 }

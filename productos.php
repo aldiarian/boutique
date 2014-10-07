@@ -25,7 +25,7 @@
     </ul>
 
     <div id="tab-1">
-        <h5 class="descripcion-producto"> <span>1</span>Selecciona los tipos de Tés que quieras ver</h5>
+        <h5 class="descripcion-producto"> <span>1º</span>Selecciona los tipos de Tés que quieras ver</h5>
         <ul class="items-productos">
             <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="verde" value="verde">
@@ -56,7 +56,7 @@
                 <label for="todos" class="css-label">todos</label>
             </li>
         </ul>
-        <h5 class="descripcion-producto"><span>2</span>Selecciona el origen</h5>
+        <h5 class="descripcion-producto"><span>2º</span>Selecciona el origen</h5>
         <ul class="items-origen">
             <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="origen 01" value="origen 01">
@@ -75,12 +75,11 @@
                 <label for="todos-origen" class="css-label">todos</label>
             </li>
         </ul>
-         <h5 class="descripcion-producto"><span>3</span>Mostrar los seleccionados</h5>
+         <h5 class="descripcion-producto"><span>3º</span>Mostrar los seleccionados</h5>
          <button class="btn">Mostrar</button>
     </div>
     <div id="tab-2">
-        <h5 class="descripcion-producto"> <span>1</span>
-            Selecciona los productos que quieras ver
+        <h5 class="descripcion-producto"> <span>1º</span>Selecciona los productos que quieras ver
         </h5>
         <ul class="items-productos">
             <li class="item" >
@@ -105,7 +104,7 @@
             </li>
     
         </ul>
-         <h5 class="descripcion-producto"><span>2</span>Mostrar los seleccionados</h5>
+         <h5 class="descripcion-producto"><span>2º</span>Mostrar los seleccionados</h5>
          <button class="btn">Mostrar</button>
     </div>
 
