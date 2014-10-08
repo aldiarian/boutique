@@ -61,6 +61,10 @@ p{
 	margin: 0 auto;
 	overflow: hidden;
 }
+.contenedor-2{
+    max-width: 780px;
+    margin:0 auto !important;
+}
 
 .flex{
 	display: flex;
@@ -426,7 +430,7 @@ p{
 
 .ultimanoti{
 	@media only screen and (min-width: $bp2){ 
-		padding-left: 3em;
+		padding-left: 1em;
 		width: 100%;
 		margin-bottom: 2em;
 		img{

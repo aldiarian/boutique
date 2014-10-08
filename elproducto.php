@@ -18,12 +18,16 @@
         <h1>El nombre del producto</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem praesentium dolorum nemo distinctio aliquam quae! Laborum eligendi, ex doloribus, porro aliquid consectetur blanditiis similique, ducimus magnam, reprehenderit unde voluptas explicabo.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ab veritatis placeat, magni vero illum optio vel consequuntur unde voluptates mollitia reiciendis, sunt soluta assumenda distinctio error eveniet id itaque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, illo, dolorum. Nulla, quaerat ipsa quo repellat, officiis, eos ad impedit voluptas molestiae distinctio, vero assumenda beatae fuga qui aperiam architecto.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quibusdam cum id ipsam illum quidem sequi quasi laudantium deserunt voluptatem in quis, ipsum iste et, dolores, neque consequatur iure pariatur.</p>
         </p>
     </article>
     <div class="elproducto-lafoto">
         <img src="images/foto-te.jpg" alt="foto producto" title="foto producto">
     </div>
     <ul class="caracteristicas">
+        <p class="prod-titulo">Características</p>
         <li class="canti">
             <div class="carac-icon">
                 <img src="../images/canti.png" alt="">
@@ -50,6 +54,7 @@
         </li>
     </ul>
     <section class="tabla-precios">
+        <p class="prod-titulo">Formatos disponibles</p>
         <table class="rwd-table">
             <tbody>
               <tr>
@@ -82,25 +87,27 @@
                     <input type="number" min="0" max="99" placeholder="0">
                 </td>
               </tr>
-              <!-- <span class="iva">* IVA incluido</span> -->
             </tbody>
-
+             <tfoot >
+                <tr>
+                    <td class="iva">
+                       *IVA incluido
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </section>
+    <seccion class="botones">
+       <div> <button class="btn anadir">Añadir a la cesta</button></div>
+       <div>
+            <button class="btn btn-nara btn-pq btn-seguir">
+                <img class="flechita" src="../images/previous11.svg" alt="">Seguir comprando
+            </button>
+        </div>
+    </seccion>
 </section>
 
 
-<seccion class="botones">
-    <button class="btn anadir">
-        Añadir a la cesta
-    </button>
-<!--     <button class="btn btn-pq">
-        Realizar pedido
-    </button> -->
-    <button class="btn btn-nara btn-pq">
-        Seguir comprando
-    </button>
-</seccion>
 
 
 

@@ -33,11 +33,11 @@
 			<a href=""><img src="images/icono-tuit-bn.svg" alt="ira a twitter" title="ir a twitter"></a>
 		</section>
 		<ul class="menu">
-			<li><a href="">INICIO</a></li>
-			<li><a href="">PRODUCTOS</a></li>			
-			<li><a href="">LA TIENDA</a></li>
+			<li><a href="index.php">INICIO</a></li>
+			<li><a href="productos.php">PRODUCTOS</a></li>			
+			<li><a href="latienda.php">LA TIENDA</a></li>
 			<li><a href="">CONTACTO</a></li>			
-			<li><a href="">NOTICIAS</a></li>
+			<li><a href="noticias.php">NOTICIAS</a></li>
 		</ul>
 
 	</article>

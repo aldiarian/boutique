@@ -1,0 +1,115 @@
+.left{
+	text-align: left;
+}
+
+.titu-cesta{
+	padding-bottom: 1em;
+}
+
+.lacesta{
+	overflow: hidden;
+	padding: 1em;
+	@media only screen and (min-width : $bp3){
+		padding:0;
+	}
+}
+
+.tabla-lacesta{
+	margin:0 auto;
+	width: 100%; 
+	border-collapse: collapse; 
+	background-color: white;
+
+	th { 
+		background-color: $claro_2;
+		font-family: $baseheadingfont;
+		text-align: center;
+		font-weight: 300;
+		@include font-size(14);
+	}
+	td, th { 
+	  padding: 6px; 
+	  border: 1px solid #ccc; 
+	  text-align: center; 
+	}
+	tbody tr{
+		line-height: 3em;
+	}
+	.objeto{
+		text-align: left;
+		padding-left: 1em;
+	}
+
+
+	@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { 
+			border: 1px solid #ccc;
+			margin-bottom: 2em;
+			padding:0;
+		}
+		tbody tr{
+			line-height: inherit;
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 40%; 
+		}
+		
+		td, th{
+			text-align: left;
+		}
+
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0px;
+			left: 0px;
+			width: 45%; 
+			white-space: nowrap;
+			background-color: $claro_2;
+			font-family: $baseheadingfont;
+			width: 30%;
+			font-size: 14px;
+			line-height: 36px;
+			text-align: left;
+			padding-left: 13px;
+		}
+		td:nth-of-type(1):before { content: "Producto"; }
+		td:nth-of-type(2):before { content: "€/unid."; }
+		td:nth-of-type(3):before { content: "Unidades"; }
+		td:nth-of-type(4):before { content: "TOTAL"; }
+		td:nth-of-type(5):before { content: "Borrar"; }
+		.objeto{
+			// text-align: left;
+			padding-left: 40%;
+		}
+
+		}
+		
+	}
+
+	.icono-borrar{
+		width: 20px;
+		cursor:pointer;
+		&:hover{
+			@include opacity(0.5);
+		}
+}

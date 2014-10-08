@@ -464,6 +464,10 @@ p {
   margin: 0 auto;
   overflow: hidden; }
 
+.contenedor-2 {
+  max-width: 780px;
+  margin: 0 auto !important; }
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -863,7 +867,7 @@ p {
 
 @media only screen and (min-width: 37.5em) {
   .ultimanoti {
-    padding-left: 3em;
+    padding-left: 1em;
     width: 100%;
     margin-bottom: 2em; }
     .ultimanoti img {
@@ -1182,7 +1186,7 @@ ul[class*="items"] {
     max-width: 780px;
     margin: 0 auto;
     padding: 2em;
-    border: 1px solid rgba(52, 72, 20, 0.2); }
+    border: 1px solid #3a2316; }
     #horizontalTab div[id*="tab-"] h5 {
       line-height: 1.3em; }
   #horizontalTab input[type=checkbox].css-checkbox {
@@ -1266,6 +1270,13 @@ ul[class*="items"] {
 .elproducto-seccion {
   text-align: center;
   padding: 2em; }
+  @media only screen and (min-width: 37.5em) {
+    .elproducto-seccion {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
   @media only screen and (min-width: 50em) {
     .elproducto-seccion {
       margin-top: 5em;
@@ -1293,33 +1304,34 @@ ul[class*="items"] {
         -moz-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
-        padding-left: 2em; }
+        padding-left: 2em;
+        padding-bottom: 2em; }
       .elproducto-seccion .elproducto-lafoto {
-        width: 35%; }
-      .elproducto-seccion .caracteristicas {
-        -webkit-box-ordinal-group: 4;
-        -webkit-order: 3;
-        -moz-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-        order: 3;
-        margin: 0; }
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        width: 35%;
+        margin-bottom: 2em; }
+        .elproducto-seccion .elproducto-lafoto img {
+          border: 1px solid #f5f1f1; }
       .elproducto-seccion .tabla-precios {
         -webkit-box-ordinal-group: 5;
         -webkit-order: 4;
         -moz-box-ordinal-group: 5;
         -ms-flex-order: 4;
-        order: 4;
-        position: absolute;
-        right: 1px; }
+        order: 4; }
         .elproducto-seccion .tabla-precios .rwd-table {
           max-width: none; } }
 
-.elproducto-lafoto {
-  margin-bottom: 2em; }
-  .elproducto-lafoto img {
-    border: 1px solid #f5f1f1; }
-
 .caracteristicas {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -moz-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1338,10 +1350,17 @@ ul[class*="items"] {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 4em auto;
   width: 322px;
   font-size: 14px;
   font-size: 0.875rem; }
+  @media only screen and (min-width: 37.5em) {
+    .caracteristicas {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 50em) {
+    .caracteristicas {
+      margin: 0; } }
   .caracteristicas span {
     font-weight: bolder;
     margin-left: 5px; }
@@ -1393,10 +1412,17 @@ ul[class*="items"] {
   .caracteristicas .cafeina-grados {
     margin-left: 0.5em; }
 
+.tabla-precios {
+  max-width: 322px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 37.5em) {
+    .tabla-precios {
+      max-width: none;
+      margin: 0; } }
+
 .rwd-table {
   margin: 0 auto;
   width: 100%;
-  max-width: 322px;
   border-collapse: collapse; }
   .rwd-table tr {
     background-color: white; }
@@ -1432,35 +1458,166 @@ ul[class*="items"] {
     @media only screen and (min-width: 37.5em) {
       .rwd-table th, .rwd-table td {
         display: table-cell;
-        padding: .25em .5em; } }
-  .rwd-table input {
-    border: none;
-    padding: 3px;
-    margin: 0;
-    margin-left: -3px;
-    text-align: center;
-    background-color: #e6e6e6;
-    font-size: 16px;
-    font-size: 1rem;
-    font-family: "lato"; }
-  .rwd-table .iva {
-    font-size: 10px;
-    font-size: 0.625rem; }
+        padding: 0.75em 1em; } }
   @media only screen and (min-width: 37.5em) {
     .rwd-table .ultimafila {
       border-bottom: 1px solid rgba(66, 92, 26, 0.13); } }
+  .rwd-table thead tr {
+    font-family: "Roboto Slab", serif; }
+  .rwd-table tfoot tr {
+    background-color: transparent; }
+    .rwd-table tfoot tr .iva {
+      border: none;
+      font-size: 12px;
+      font-size: 0.75rem; }
 
-.botones button {
-  margin: 1em auto;
+.unidades input {
+  border: none;
+  padding: 3px;
+  margin: 0;
+  margin-left: -3px;
   text-align: center;
-  display: block; }
+  background-color: #e6e6e6;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "lato"; }
 
-.btn-pq {
+.prod-titulo {
+  font-family: "Roboto Slab", serif;
+  border: none;
+  background-color: none;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 1em; }
+
+.botones {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+  -moz-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+  display: block;
+  margin-bottom: 4em;
+  width: 100%; }
+  .botones div {
+    width: 100%;
+    overflow: hidden; }
+  .botones button {
+    margin: 0.5em auto;
+    text-align: center;
+    display: block; }
+    @media only screen and (min-width: 50em) {
+      .botones button {
+        float: right; } }
+
+.btn-seguir {
+  position: relative; }
+
+.flechita {
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  left: 10px; }
+
+.btn {
   width: 180px; }
 
-.productos {
-  max-width: 780px;
-  margin: 0 auto !important; }
+.left {
+  text-align: left; }
+
+.titu-cesta {
+  padding-bottom: 1em; }
+
+.lacesta {
+  overflow: hidden;
+  padding: 1em; }
+  @media only screen and (min-width: 50em) {
+    .lacesta {
+      padding: 0; } }
+
+.tabla-lacesta {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white; }
+  .tabla-lacesta th {
+    background-color: #fef7d1;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .tabla-lacesta td, .tabla-lacesta th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: center; }
+  .tabla-lacesta tbody tr {
+    line-height: 3em; }
+  .tabla-lacesta .objeto {
+    text-align: left;
+    padding-left: 1em; }
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    .tabla-lacesta {
+      /* Force table to not be like tables anymore */
+      /* Hide table headers (but not display: none;, for accessibility) */ }
+      .tabla-lacesta table, .tabla-lacesta thead, .tabla-lacesta tbody, .tabla-lacesta th, .tabla-lacesta td, .tabla-lacesta tr {
+        display: block; }
+      .tabla-lacesta thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+      .tabla-lacesta tr {
+        border: 1px solid #ccc;
+        margin-bottom: 2em;
+        padding: 0; }
+      .tabla-lacesta tbody tr {
+        line-height: inherit; }
+      .tabla-lacesta td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 40%; }
+      .tabla-lacesta td, .tabla-lacesta th {
+        text-align: left; }
+      .tabla-lacesta td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0px;
+        left: 0px;
+        width: 45%;
+        white-space: nowrap;
+        background-color: #fef7d1;
+        font-family: "Roboto Slab", serif;
+        width: 30%;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: left;
+        padding-left: 13px; }
+      .tabla-lacesta td:nth-of-type(1):before {
+        content: "Producto"; }
+      .tabla-lacesta td:nth-of-type(2):before {
+        content: "€/unid."; }
+      .tabla-lacesta td:nth-of-type(3):before {
+        content: "Unidades"; }
+      .tabla-lacesta td:nth-of-type(4):before {
+        content: "TOTAL"; }
+      .tabla-lacesta td:nth-of-type(5):before {
+        content: "Borrar"; }
+      .tabla-lacesta .objeto {
+        padding-left: 40%; } }
+
+.icono-borrar {
+  width: 20px;
+  cursor: pointer; }
+  .icono-borrar:hover {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5; }
 
 .r-tabs-anchor {
   color: white;

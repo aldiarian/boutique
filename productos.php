@@ -18,7 +18,7 @@
 	<h2>Selecciona el producto que quieras ver</h2>
 </section>
 <div id="horizontalTab">
-    <ul class="productos">
+    <ul class="contenedor-2">
         <li><a href="#tab-1">Tés</a></li>
         <li><a href="#tab-2">Accesorios</a></li>
         <li><a href="#tab-3">Confitería</a></li>

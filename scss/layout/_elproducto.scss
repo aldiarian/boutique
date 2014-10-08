@@ -2,6 +2,9 @@
 .elproducto-seccion{
 	text-align: center;
 	padding:2em;
+	@media only screen and (min-width : $bp2){
+		justify-content:space-between;
+	}
 	@media only screen and (min-width : $bp3){
 		margin-top: 5em;
 		display: flex;
@@ -13,40 +16,44 @@
 			text-align: left;
 			order:2;
 			padding-left: 2em;
+			padding-bottom: 2em;
 		}
 		.elproducto-lafoto{
+			order:1;
 			width: 35%;
+			margin-bottom: 2em;
+			img{
+				border: 1px solid $grisclaro;
+			}
 		}
 		.caracteristicas{
-			order:3;
-			margin:0;
+			
 		}
 		.tabla-precios{
 			order:4;
-			position: absolute;
-			right: 1px;
 			.rwd-table{
 				max-width: none;
 			}
 		}
-
 	}
 }
 
-.elproducto-lafoto{
-	margin-bottom: 2em;
-	img{
-		border: 1px solid $grisclaro;
-	}
-}
 .caracteristicas{
+	order:3;
+	margin:0;
 	padding:0;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
-	margin:0 auto;
+	margin:4em auto;
 	width: 322px;
 	@include font-size(14);
+	@media only screen and (min-width : $bp2){
+		@include font-size(16);
+	}
+	@media only screen and (min-width : $bp3){
+		margin:0;
+	}
 	span{
 		font-weight: bolder;
 		margin-left: 5px;
@@ -92,91 +99,142 @@
 	}
 }
 
+
+.tabla-precios{
+	max-width: 322px;
+	margin: 0 auto;
+		@media only screen and (min-width : $bp2){
+			max-width: none;;
+			margin: 0;
+		}
+}
+
 .rwd-table {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 322px;
 	border-collapse: collapse;
 
 	tr {
 		background-color: white;
-
 	}
 
 	th {
 		font-weight: inherit;
 		border:1px solid rgba(66, 92, 26, 0.13);
 		width: 6.5em; // magic number :( adjust according to your own content
-	display: inline-block;
-	background-color: $claro_2;
-	margin-right: 13px;
-	padding:8px;
-	display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+		display: inline-block;
+		background-color: $claro_2;
+		margin-right: 13px;
+		padding:8px;
+		display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
 	}
 
 	td {
-	display: block; 
-	border:1px solid rgba(66, 92, 26, 0.13);
-	border-bottom: none;
-	&:first-child {
-		margin-top: .5em;
-	}
-	&:last-child {
-	  margin-bottom: .5em;
-	  border-bottom:1px solid rgba(66, 92, 26, 0.13);
-	}
+		display: block; 
+		border:1px solid rgba(66, 92, 26, 0.13);
+		border-bottom: none;
+			&:first-child {
+				margin-top: .5em;
+			}
+			&:last-child {
+			  margin-bottom: .5em;
+			  border-bottom:1px solid rgba(66, 92, 26, 0.13);
+			}
 
-	span {
+			span {
 
-	  width: 6.5em; // magic number :( adjust according to your own content
-	  display: inline-block;
-	  background-color: $claro_2;
-	  margin-right: 13px;
-	  padding:8px;
-	  
-	  @media only screen and (min-width : $bp2){
-	    display: none;
-	  }
-	}
-
+			  width: 6.5em; // magic number :( adjust according to your own content
+			  display: inline-block;
+			  background-color: $claro_2;
+			  margin-right: 13px;
+			  padding:8px;
+				  
+				  @media only screen and (min-width : $bp2){
+				    display: none;
+				  }
+			 }
 	}
   
 	th, td {
 		text-align: left;
 		@media only screen and (min-width : $bp2){
 		  display: table-cell;
-		  padding: .25em .5em;
+		  padding: 0.75em 1em;
 		}
 	}
-  
+	  
 
-	input{
-		border: none;
-		padding: 3px;
-		margin: 0;
-		margin-left: -3px;
-		text-align: center;
-		background-color: $lightergrey ;
-		@include font-size(16);
-		font-family: $basefont;
-	}
 
-	.iva{
-		@include font-size(10);
-	}
 
 	@media only screen and (min-width : $bp2){
 		.ultimafila{
 			border-bottom: 1px solid rgba(66, 92, 26, 0.13);
 		}
 	}
+	thead tr{
+		font-family: $baseheadingfont;
+	}
+	tfoot tr{
+		background-color: transparent;
+		.iva{
+			border:none;
+			@include font-size(12);
+		}
+	}
 }
 
-.botones button{
-	margin:1em auto;
+
+.unidades input{
+	border: none;
+	padding: 3px;
+	margin: 0;
+	margin-left: -3px;
 	text-align: center;
-	display: block;
+	background-color: $lightergrey ;
+	@include font-size(16);
+	font-family: $basefont;
 }
-.btn-pq{
+	
+.prod-titulo{
+	font-family: $baseheadingfont;
+	border:none;
+	background-color: none;
+	text-align: left;
+	font-weight: normal;
+	@include font-size(16);
+	border-bottom: 1px solid $lightergrey ;
+	margin-bottom: 1em;
+}
+
+.botones {
+	order:5;
+	display: block;
+	margin-bottom: 4em;
+	width: 100%;
+	div{
+		width: 100%;
+		overflow: hidden;
+
+
+	}
+	button{
+		margin:0.5em auto;
+		text-align: center;
+		display: block;
+			@media only screen and (min-width : $bp3){
+				float:right;
+			}
+	}
+}
+.btn-seguir{
+	position: relative;
+}
+.flechita{
+	height: 15px;
+	position: absolute;
+	top:7px;
+	left:10px;
+}
+.btn{
 	width: 180px;
 }

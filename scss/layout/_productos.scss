@@ -52,7 +52,7 @@ ul[class*="items"]{
     max-width: 780px;
     margin: 0 auto;
     padding: 2em;
-    border:1px solid rgba(52, 72, 20, 0.2);
+    border:1px solid $basecolor_osc;
     h5{
       line-height: 1.3em;
     }
@@ -92,10 +92,6 @@ ul[class*="items"]{
       padding: 3px 8px;
       padding-left: 0;
       font-weight: bolder;
-      // background-color: $basecolor;
-      // color:white;
-      // margin-right: 5px;
-      // @include border-radius(25px,25px,25px,25px);
     }
   }
   button{
