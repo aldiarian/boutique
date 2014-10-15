@@ -30,27 +30,27 @@
         <p class="prod-titulo">Características</p>
         <li class="canti">
             <div class="carac-icon">
-                <img src="../images/canti.png" alt="">
+                <img src="images/canti.png" alt="">
             </div>
             Cantidad de té por taza: <span> 100 gr</span>
         </li>
         <li class="tempe">
             <div class="carac-icon">
-                <img src="../images/tempe.png" alt="">
+                <img src="images/tempe.png" alt="">
             </div>
             Temperatura del agua: <span> 00 °</span>
         </li>
         <li class="tiempo">
             <div class="carac-icon">
-                <img src="../images/tiempo.png" alt="">
+                <img src="images/tiempo.png" alt="">
             </div>
             Tiempo de infusión: <span> 10 min</span>
         </li>
         <li class="cafeina">
             <div class="carac-icon">
-                <img src="../images/cafeina-taza.png" alt="">
+                <img src="images/cafeina-taza.png" alt="">
             </div>
-            Cafeína: <img class="cafeina-grados" src="images/cafeina.png" alt="">
+            Cafeína: <span class="cafeina1"> </span>
         </li>
     </ul>
     <section class="tabla-precios">
@@ -73,7 +73,7 @@
               </tr>
               <tr>
                 <td><span>Tamaño</span>250gr</td>
-                <td><span>Dto%</span>10%</td>
+                <td><span>Dto%</span>10% ** </td>
                 <td><span>Precio*</span> 8,50 €</td>
                 <td class="unidades"><span>Unidades</span>
                     <input type="number" min="0" max="99" placeholder="0">
@@ -81,7 +81,7 @@
               </tr>
               <tr class="ultimafila">
                 <td><span>Tamaño</span>300gr</td>
-                <td><span>Dto%</span>20%</td>
+                <td><span>Dto%</span>20% **</td>
                 <td><span>Precio*</span> 8,50 €</td>
                 <td class="unidades"><span>Unidades</span>
                     <input type="number" min="0" max="99" placeholder="0">
@@ -90,8 +90,9 @@
             </tbody>
              <tfoot >
                 <tr>
-                    <td class="iva">
-                       *IVA incluido
+                    <td colspan="2" class="iva">
+                       * IVA incluido <br>
+                       ** ya incluido en el precio
                     </td>
                 </tr>
             </tfoot>
@@ -101,12 +102,18 @@
        <div> <button class="btn anadir">Añadir a la cesta</button></div>
        <div>
             <button class="btn btn-nara btn-pq btn-seguir">
-                <img class="flechita" src="../images/previous11.svg" alt="">Seguir comprando
+                <span>Volver atrás</span>
             </button>
         </div>
     </seccion>
 </section>
 
+<script>
+    jQuery(document).ready(function($) {
+        $(".menu-principal-cabecera a").removeClass('activo');
+        $(".productos").addClass('activo')
+    });
+</script>
 
 
 

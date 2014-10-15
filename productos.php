@@ -83,22 +83,27 @@
         </h5>
         <ul class="items-productos">
             <li class="item" >
-                <input class="css-checkbox" type="checkbox" name="tipo_te" id="verde" value="cucharas">
+                <input class="css-checkbox" type="checkbox" name="tipo_te" id="cucharas" value="cucharas">
                 <label for="cucharas" class="css-label">cucharas</label>
-            </li> <li class="item" >
+            </li>
+            <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="tetera" value="tetera">
                 <label for="tetera" class="css-label">tetera</label>
-            </li> <li class="item" >
+            </li>
+            <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="taza" value="taza">
                 <label for="taza" class="css-label">taza</label>
-            </li> <li class="item" >
+            </li>
+            <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="juego tazas" value="juego tazas">
                 <label for="juego tazas" class="css-label">juego tazas</label>
-            </li> <li class="item" >
+            </li>
+            <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="filtro" value="filtro">
                 <label for="filtro" class="css-label">filtro</label>
             </li>
-            </li> <li class="item" >
+            </li>
+            <li class="item" >
                 <input class="css-checkbox" type="checkbox" name="tipo_te" id="todos_prod" value="todos_prod">
                 <label for="todos_prod" class="css-label">todos</label>
             </li>
@@ -113,7 +118,7 @@
     </div>
 </div> 
 
-<section class="mostrar_productos contenedor">
+<section class="mostrar_productos contenedor-big">
     <article class="titular">
         <h2>Ahora le estamos mostrando:</h2>
         <p>TÉS</p>
@@ -125,120 +130,63 @@
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del producto Lorem ipsum dolor</p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto muy largo tres lineas
-                </p>
+                    <p class="prod_text">Nombre del producto </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del producto </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del producto Lorem </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
+                    <p class="prod_text">Nombre del producto </p>
             </a>
         </article>
         <article class="prod">
             <a href="elproducto.php">
                 <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto muy largo tres lineas
-                </p>
+                    <p class="prod_text">Nombre del producto Lorem </p>
             </a>
         </article>
-        <article class="prod">
-            <a href="elproducto.php">
-                <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
-            </a>
-        </article>
-        <article class="prod">
-            <a href="elproducto.php">
-                <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
-            </a>
-        </article>
-        <article class="prod">
-            <a href="elproducto.php">
-                <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
-            </a>
-        </article>
-        <article class="prod">
-            <a href="elproducto.php">
-                <img src="images/foto-te.jpg" alt="">
-                <p class="prod_text">
-                    Nombre del producto
-                </p>
-            </a>
-        </article>
+
+
     </section>
 </section>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#horizontalTab').responsiveTabs({
-            rotate: false,
-            startCollapsed: 'false',
-            collapsible: 'accordion',
-            setHash: true,
-            disabled: [3,4],
-            activate: function(e, tab) {
-                $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-            },
-            activateState: function(e, state) {
-                //console.log(state);
-                $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
-            }
-        });
+    jQuery(document).ready(function($) {
+        $(".menu-principal-cabecera a").removeClass('activo');
+        $(".productos").addClass('activo')
     });
 </script>
+
 
 <?php  
 	require($dir."footer.php");

@@ -131,6 +131,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/cafeina-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1013,
+		"inputAbbreviatedPath": "\/images\/cafeina-sprite.png",
+		"outputAbbreviatedPath": "\/images\/cafeina-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/cafeina-taza.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -303,6 +314,17 @@
 		"initialSize": 14204,
 		"inputAbbreviatedPath": "\/images\/plano-tienda.jpg",
 		"outputAbbreviatedPath": "\/images\/plano-tienda.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/selec-formato.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 156,
+		"inputAbbreviatedPath": "\/images\/selec-formato.png",
+		"outputAbbreviatedPath": "\/images\/selec-formato.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1626,7 +1648,7 @@
 	"markdownEnableFootnotes": 0,
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
-	"reloadFileURLs": 0,
+	"reloadFileURLs": 1,
 	"sassAutoOutputPathRelativePath": "..\/css",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",

@@ -26,13 +26,13 @@
 </section>
 
 <article class="contenedor titular-seccion ">
-	<h3><span>Productos destacados</span></h3>
+	<h3 class="titular-destacado"><span>Productos destacados</span></h3>
 </article>
 
 <section class="destacados contenedor">
 
 	<article class="producto-destacado">
-		<a href="" title="ver producto">
+		<a href="elproducto.php" title="ver producto">
 			<img src="http://lorempixel.com/280/160/" alt="">
 			<div class="texto-desta">
 				<h3>Producto destacado</h3>
@@ -41,7 +41,7 @@
 		</a>
 	</article>
 	<article class="producto-destacado">
-		<a href="" title="ver producto">
+		<a href="elproducto.php" title="ver producto">
 			<img src="http://lorempixel.com/280/160/" alt="">
 			<div class="texto-desta">
 				<h3>Producto destacado</h3>
@@ -50,7 +50,7 @@
 		</a>
 	</article>
 	<article class="producto-destacado">
-		<a href="" title="ver producto">
+		<a href="elproducto.php" title="ver producto">
 			<img src="http://lorempixel.com/280/160/" alt="">
 			<div class="texto-desta">
 				<h3>Producto destacado</h3>
@@ -64,7 +64,7 @@
 
 
 <article class="contenedor titular-seccion ">
-	<h3><span>Últimas noticias</span></h3>
+	<h3 class="titular-destacado"><span>Últimas noticias</span></h3>
 </article>
 
 <section class="ultimas-noticias contenedor">
@@ -88,7 +88,12 @@
 	</article>
 </section>
 
-
+<script>
+	jQuery(document).ready(function($) {
+	    $(".menu-principal-cabecera a").removeClass('activo');
+	    $(".index").addClass('activo')
+	});
+</script>
 
 
 

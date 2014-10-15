@@ -16,6 +16,12 @@
 
 
 
+<script>
+    jQuery(document).ready(function($) {
+        $(".menu-principal-cabecera a").removeClass('activo');
+        $(".noticias").addClass('activo')
+    });
+</script>
 
 
 <?php  

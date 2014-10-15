@@ -76,10 +76,12 @@
 		justify-content:center;
 		align-items:center;
 		margin-right: 1em;
-
 	}
 	.canti .carac-icon{
 		background-color: $canti !important;
+		img{
+			width: 85%;
+		}
 		
 	}
 	.tempe .carac-icon{
@@ -94,10 +96,46 @@
 		background-color: $cafeina !important;
 		
 	}
-	.cafeina-grados{
-		margin-left: 0.5em;
-	}
 }
+
+
+.cafeina0, .cafeina1, .cafeina2, .cafeina3, .cafeina4{
+	background: url(../images/cafeina-sprite.png) no-repeat;
+	margin-left: 0.5em;
+}
+
+.cafeina0{
+	background-position: 0 0;
+	width: 78px;
+	height: 16px;
+}
+
+.cafeina1{
+	background-position: 0 -19px ;
+	width: 78px;
+	height: 16px;
+}
+
+.cafeina2{
+	background-position: 0 -39px ;
+	width: 78px;
+	height: 16px;
+}
+
+.cafeina3{
+	background-position: 0 -59px ;
+	width: 78px;
+	height: 16px;
+}
+
+.cafeina4{
+	background-position: 0 -78px ;
+	width: 78px;
+	height: 16px;
+}
+
+
+
 
 
 .tabla-precios{
@@ -227,13 +265,22 @@
 	}
 }
 .btn-seguir{
-	position: relative;
+	span{
+		position: relative;
+		margin-left: 10px;
+		&:before{
+		 content:"<";
+		 position: absolute;
+		 left:-10px;
+		}
+	}
 }
+
 .flechita{
 	height: 15px;
 	position: absolute;
-	top:7px;
-	left:10px;
+	top:5px;
+	left:20px;
 }
 .btn{
 	width: 180px;

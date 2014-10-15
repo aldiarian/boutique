@@ -12,6 +12,14 @@
 	@media only screen and (min-width : $bp3){
 		padding:0;
 	}
+	> section{
+		margin-bottom: 2em;
+	}
+	.titular-destacado span{
+		line-height: 2em;
+		// background-color: $claro_2;
+		// border: 1px solid rgba(230, 230, 230, 0.33);
+	}
 }
 
 .tabla-lacesta{
@@ -19,6 +27,10 @@
 	width: 100%; 
 	border-collapse: collapse; 
 	background-color: white;
+	
+	.ico-borrar{
+		padding:0;
+	}
 
 	th { 
 		background-color: $claro_2;
@@ -27,17 +39,19 @@
 		font-weight: 300;
 		@include font-size(14);
 	}
+	td{
+		vertical-align: middle;
+		line-height: 1em;
+		padding:1em 0;
+	}
 	td, th { 
-	  padding: 6px; 
-	  border: 1px solid #ccc; 
-	  text-align: center; 
+	  // padding: 6px; 
+	  border: 1px solid rgba(230, 230, 230, 0.33); 
+	  text-align: left; 
+	  padding-left: 1em;
 	}
 	tbody tr{
 		line-height: 3em;
-	}
-	.objeto{
-		text-align: left;
-		padding-left: 1em;
 	}
 
 
@@ -56,7 +70,7 @@
 		}
 		
 		tr { 
-			border: 1px solid #ccc;
+			border: 1px solid rgba(230, 230, 230, 0.33);
 			margin-bottom: 2em;
 			padding:0;
 		}
@@ -70,6 +84,7 @@
 			border-bottom: 1px solid #eee; 
 			position: relative;
 			padding-left: 40%; 
+			overflow: hidden;
 		}
 		
 		td, th{
@@ -83,6 +98,7 @@
 			top: 0px;
 			left: 0px;
 			width: 45%; 
+			height: 100px;
 			white-space: nowrap;
 			background-color: $claro_2;
 			font-family: $baseheadingfont;
@@ -93,10 +109,11 @@
 			padding-left: 13px;
 		}
 		td:nth-of-type(1):before { content: "Producto"; }
-		td:nth-of-type(2):before { content: "€/unid."; }
-		td:nth-of-type(3):before { content: "Unidades"; }
-		td:nth-of-type(4):before { content: "TOTAL"; }
-		td:nth-of-type(5):before { content: "Borrar"; }
+		td:nth-of-type(2):before { content: "Formato"; }
+		td:nth-of-type(3):before { content: "€/unid."; }
+		td:nth-of-type(4):before { content: "Unidades"; }
+		td:nth-of-type(5):before { content: "TOTAL"; }
+		td:nth-of-type(6):before { content: "Borrar"; }
 		.objeto{
 			// text-align: left;
 			padding-left: 40%;
@@ -105,11 +122,176 @@
 		}
 		
 	}
-
+	
 	.icono-borrar{
 		width: 20px;
 		cursor:pointer;
 		&:hover{
 			@include opacity(0.5);
 		}
+}
+
+.precio-uni{
+	margin-right: 1em;
+}
+.recoger{
+	ul{
+		padding:0;
+		display: table;
+		margin:0 auto;
+		padding-bottom: 1em;
+
+	}
+	li{
+		margin-bottom: 5px;
+	}
+	p{
+		text-align: center;
+	}
+	input[type=radio].css-checkbox {
+		position:absolute; z-index:-1000;
+		left:-1000px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		height:1px;
+		width:1px;
+		margin:-1px;
+		padding:0;
+		border:0;
+	}
+
+	input[type=radio].css-checkbox + label.css-label {
+		padding-left:25px;
+		height:20px; 
+		display:inline-block;
+		line-height:20px;
+		background-repeat:no-repeat;
+		background-position: 0 0;
+		vertical-align:middle;
+		cursor:pointer;
+
+	}
+
+	input[type=radio].css-checkbox:checked + label.css-label {
+		background-position: 0 -20px;
+	}
+	label.css-label {
+		background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_a6b45bda8411f8d3c0c1dc677340852b.png);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+}
+.precios{
+	text-align: center;
+	article{
+		border: 2px solid black;
+		background-color: white;
+		display: table;
+		margin:0 auto;
+		padding:0.5em 1em ;
+		h3{padding:0; margin:0;}
+		p{ padding:0; margin:0;}
+	}
+}
+
+.titular-lacesta{
+	text-align: center;
+	background-color: rgba(230, 230, 230, 0.33);
+	text-align: center;
+	display: table;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+.hacerpedidos{
+	.btn{
+		display: table;
+		margin:0 auto;
+	}
+	.hacer{
+		padding:0.5em 0;
+		margin-bottom: 1em;
+	}
+}
+
+
+.selector{
+	background-image: url("../images/selec-formato.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 80% 50%;
+	background-color: white;
+	overflow: hidden;
+	padding:0;
+	min-width: 120px;
+}
+	.selector-opciones{
+		width: 120%;
+		background: transparent;
+		border: none;
+		color:grey  ; 
+		@include font-size(15);
+		font-family:  $basefont;
+		cursor: pointer;
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		appearance:none;
+		padding:0 ;
+	}
+
+.datosenvio{
+	ul{
+		display: table;
+		margin:0 auto;
+		width: 100%;
+		max-width: 400px;
+		padding: 0;
+	}
+	label{
+		margin-left: 1em;
+	}
+	input, textarea{
+		// text-transform: uppercase;
+		font-family: $basefont;
+		color:black;
+		font-weight: lighter;
+		width: 100%;
+		margin-bottom: 1em;
+		border:1px solid grey;
+		padding:1em;
+		font-size:14px;
+	
+		&::-webkit-input-placeholder {
+		   color: black;
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+		   color: black;  
+		}
+
+		&::-moz-placeholder {  /* Firefox 19+ */
+		   color: black;  
+		}
+
+		&:-ms-input-placeholder {  
+		   color: black;  
+		}
+	}
+	.confirmar{
+		text-transform: inherit;
+		font-family: inherit;
+		max-width: 200px;
+		display: table;
+		margin:0 auto;
+		padding:0.5em;
+		border: none;
+	}
+
 }

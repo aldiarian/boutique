@@ -106,9 +106,12 @@
 </div>
 
 
-
-
-
+<script>
+    jQuery(document).ready(function($) {
+        $(".menu-principal-cabecera a").removeClass('activo');
+        $(".latienda").addClass('activo')
+    });
+</script>
 
 <script type="text/javascript">
   $(document).ready(function() {

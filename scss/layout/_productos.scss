@@ -44,7 +44,33 @@ ul[class*="items"]{
   }
 }
 
-
+input[type=checkbox].css-checkbox {
+      position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+    }
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left:29px;
+  height:20px; 
+  display:inline-block;
+  line-height:20px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -20px;
+}
+label.css-label {
+  background-image:url("../images/checkbox02.png");
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 #horizontalTab{
   padding: 0 1em 2em 1em;
@@ -58,33 +84,7 @@ ul[class*="items"]{
     }
   }
 
-  input[type=checkbox].css-checkbox {
-        position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
-      }
-  input[type=checkbox].css-checkbox + label.css-label {
-    padding-left:29px;
-    height:20px; 
-    display:inline-block;
-    line-height:20px;
-    background-repeat:no-repeat;
-    background-position: 0 0;
-    vertical-align:middle;
-    cursor:pointer;
-    text-transform: uppercase;
-    font-weight: lighter;
-  }
-  input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -20px;
-  }
-  label.css-label {
-    background-image:url("../../images/checkbox02.png");
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+
   
   .descripcion-producto{
     font-weight: 400;
@@ -97,6 +97,10 @@ ul[class*="items"]{
   button{
     margin-top:1em;
   }
+}
+
+.mostrar_productos{
+  margin-bottom: 4em;
 }
 
 .mostrar_productos .titular{
@@ -114,7 +118,8 @@ ul[class*="items"]{
   .prod{
     max-width: 240px;
     text-align: center;
-    padding: 0 10px;
+    margin:0 10px 20px 10px;
+    min-height: 278px;
     @include transition(0.1s);
     &:hover{
       @include opacity(0.5);
@@ -122,9 +127,20 @@ ul[class*="items"]{
     img{
       border:1px solid $grisclaro;
     }
+
   }
+
+  .prod a{
+    display: flex;
+    flex-direction:column;
+    align-items:strech;
+  }
+
   .prod_text{
     background-color: $grisclaro;
-    padding: 0.3em;
+    overflow: hidden;
+    line-height: 1.2em;
+    padding:1em ;
+    margin-bottom: 0;
   }
 }

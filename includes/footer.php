@@ -55,7 +55,7 @@
 
 
 	<!-- Responsive Tabs JS -->
-	<script src="../js/jquery.responsiveTabs.min.js" type="text/javascript"></script>
+	<script src="js/jquery.responsiveTabs.min.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
 	    $(document).ready(function () {
