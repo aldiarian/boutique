@@ -1,0 +1,115 @@
+
+.contenido-noticias{
+	margin-bottom: 4em;
+}
+.caja-noticias{
+	display: flex;
+	flex-wrap:wrap;
+	width: 100%;
+	justify-content:center;
+		@media only screen and (min-width : $bp3){
+			width: 72%;
+			float: left;
+		}
+}
+
+.side-noticias{
+	padding:0;
+	background-color: $grisclaro;
+	display: table;
+	margin:0 auto;
+	width: 95%;
+	text-align: center;
+
+	ul{
+		padding:0;
+		display: table;
+		margin:0 auto;
+		margin-bottom: 1em;
+	}
+	h4{
+		font-family: $baseheadingfont;
+		margin-top:1em;
+		padding:5px 0;
+		letter-spacing: 2px;
+		text-align: center;
+		background-color: $lightergrey;
+		border-top:1px solid white;
+		border-bottom:1px solid white;
+	}
+	li{
+		font-weight: 200;
+		margin:5px 0;
+	}
+	@media only screen and (min-width : $bp3){
+		text-align: left;
+		margin:1em;
+		float:right;
+		width: 24%;
+	}
+}
+
+.noticia-pq, .noticia-grande, .otrasnoticias{
+	text-align: left;
+	padding:1em 2em;
+	background-color: white;
+	border:1px solid $gris2;
+	margin:1em ;
+	max-width: 650px;
+		@media only screen and (min-width : $bp3){
+			max-width: none;
+		}
+	.fecha{
+		@include font-size(12);
+		font-weight: 400;
+		margin-bottom: 0px;
+		color:grey;
+	}
+	img{
+		margin-bottom: 1em;
+	}
+	.texto-noti-pq {
+		margin-bottom: 1em;
+		p{
+			margin-bottom: 1em;
+		}
+	}
+}
+.leermas{
+	font-size: 13px;
+	color:$basecolor;
+	&:hover{
+		@include opacity();
+	}
+}
+
+
+
+.noticia-grande{
+	margin-bottom: 0;
+}
+.otrasnoticias{
+	display: flex;
+	width: 100%;
+	padding:0 ;
+	background-color: white;
+	font-family: $baseheadingfont;
+	border: none;
+	margin-top: 0;
+	> article{
+		border-bottom:1px solid $gris2;
+		border-left: 1px solid $gris2;
+		width: 50%;
+		&:hover{
+			background-color: $gris2;
+		}
+	}
+	a{
+		margin:0 2em;
+		line-height: 3em;
+	}
+	.noti-siguiente{
+		border-right: 1px solid $gris2;
+		text-align: right;
+	}
+}

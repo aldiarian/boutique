@@ -16,10 +16,9 @@
 	<h1 class="h2">Noticias</h1>
 </section>
 
-<section class="contenido-noticias contenedor-big">
+<section class="contenido-noticias contenedor">
 	<section class="caja-noticias">
-		<article class="noticia-pq">
-			<a href="lanoticia.php">
+		<article class="noticia-grande">
 				<p class="fecha">24 Enero 2014</p>
 				<h2 class="noti-titulo"> Título de la noticia</h2>
 				<img src="http://lorempixel.com/600/350/" alt="">
@@ -27,36 +26,19 @@
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eveniet nihil fuga quod vel! Asperiores assumenda mollitia sunt dolorem, facere voluptate, repellendus ullam illo delectus, placeat rem ipsam non laudantium.
 					</p>
-					<a href="lanoticia.php" class="leermas ">Leer más ></a>
-			</a>
-			</section>
-		</article>
-		<article class="noticia-pq">
-			<a href="lanoticia.php">
-				<p class="fecha">24 Enero 2014</p>
-				<h2 class="noti-titulo"> Título de la noticia</h2>
-				<img src="http://lorempixel.com/600/350/" alt="">
-				<section class="texto-noti-pq">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eveniet nihil fuga quod vel! Asperiores assumenda mollitia sunt dolorem, facere voluptate, repellendus ullam illo delectus, placeat rem ipsam non laudantium.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rerum repellat cupiditate adipisci, eligendi aliquam ducimus possimus numquam, ratione. Amet et, iste itaque earum quos neque optio vel repellat ex!
 					</p>
-					<a href="lanoticia.php" class="leermas ">Leer más ></a>
-			</a>
 			</section>
 		</article>
-		<article class="noticia-pq">
-			<a href="lanoticia.php">
-				<p class="fecha">24 Enero 2014</p>
-				<h2 class="noti-titulo"> Título de la noticia</h2>
-				<img src="http://lorempixel.com/600/350/" alt="">
-				<section class="texto-noti-pq">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eveniet nihil fuga quod vel! Asperiores assumenda mollitia sunt dolorem, facere voluptate, repellendus ullam illo delectus, placeat rem ipsam non laudantium.
-					</p>
-					<a href="lanoticia.php" class="leermas ">Leer más ></a>
-			</a>
-			</section>
-		</article>
+		<section class="otrasnoticias">
+			<article class="leermas noti-anterior">
+				<a href="#"> < anterior</a>
+			</article>
+			<article class="leermas noti-siguiente">
+				<a href="#">siguiente > </a>
+			</article>
+		</section>
 
 	</section>
 	<section class="side-noticias">

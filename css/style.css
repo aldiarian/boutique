@@ -493,15 +493,6 @@ p {
 .tres {
   width: 33.333333%; }
 
-.left {
-  text-align: left !important; }
-
-.right {
-  text-align: right !important; }
-
-.center {
-  text-align: center !important; }
-
 /*------------------------------------*\
     $botones	
 \*------------------------------------*/
@@ -1615,10 +1606,21 @@ label.css-label {
   width: 180px; }
 
 .left {
-  text-align: left; }
+  text-align: left !important; }
+
+@media only screen and (min-width: 50em) {
+  .right {
+    text-align: right !important;
+    padding-right: 2em !important; } }
+
+.center {
+  text-align: center !important; }
 
 .titu-cesta {
   padding-bottom: 1em; }
+
+.nom-product {
+  max-width: 200px; }
 
 .lacesta {
   overflow: hidden;
@@ -1636,8 +1638,6 @@ label.css-label {
   width: 100%;
   border-collapse: collapse;
   background-color: white; }
-  .tabla-lacesta .ico-borrar {
-    padding: 0; }
   .tabla-lacesta th {
     background-color: #fef7d1;
     font-family: "Roboto Slab", serif;
@@ -1648,13 +1648,15 @@ label.css-label {
   .tabla-lacesta td {
     vertical-align: middle;
     line-height: 1em;
-    padding: 1em 0; }
+    padding: 1em 0;
+    text-align: left; }
   .tabla-lacesta td, .tabla-lacesta th {
     border: 1px solid rgba(230, 230, 230, 0.33);
-    text-align: left;
     padding-left: 1em; }
   .tabla-lacesta tbody tr {
     line-height: 3em; }
+  .tabla-lacesta .ico-borrar {
+    padding: 0; }
   @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
     .tabla-lacesta {
       /* Force table to not be like tables anymore */
@@ -1709,18 +1711,22 @@ label.css-label {
       .tabla-lacesta td:nth-of-type(6):before {
         content: "Borrar"; }
       .tabla-lacesta .objeto {
-        padding-left: 40%; } }
+        padding-left: 40%; }
+      .tabla-lacesta .ico-borrar {
+        padding: 1em 0; }
+      .tabla-lacesta .nom-product {
+        max-width: none; } }
 
 .icono-borrar {
   width: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: table;
+  margin: 0 auto;
+  margin-left: 40%; }
   .icono-borrar:hover {
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
     opacity: 0.5; }
-
-.precio-uni {
-  margin-right: 1em; }
 
 .recoger ul {
   padding: 0;
@@ -1799,11 +1805,14 @@ label.css-label {
   background-repeat: no-repeat;
   -webkit-background-size: 20px;
   background-size: 20px;
-  background-position: 80% 50%;
+  background-position: 70% 50%;
   background-color: white;
   overflow: hidden;
   padding: 0;
   min-width: 120px; }
+  @media only screen and (min-width: 37.5em) {
+    .selector {
+      background-position: 80% 50%; } }
 
 .selector-opciones {
   width: 120%;
@@ -1853,7 +1862,121 @@ label.css-label {
   display: table;
   margin: 0 auto;
   padding: 0.5em;
-  border: none; }
+  border: none;
+  font-family: "Roboto Slab", serif; }
+
+.contenido-noticias {
+  margin-bottom: 4em; }
+
+.caja-noticias {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (min-width: 50em) {
+    .caja-noticias {
+      width: 72%;
+      float: left; } }
+
+.side-noticias {
+  padding: 0;
+  background-color: #f5f1f1;
+  display: table;
+  margin: 0 auto;
+  width: 95%;
+  text-align: center; }
+  .side-noticias ul {
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 1em; }
+  .side-noticias h4 {
+    font-family: "Roboto Slab", serif;
+    margin-top: 1em;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; }
+  .side-noticias li {
+    font-weight: 200;
+    margin: 5px 0; }
+  @media only screen and (min-width: 50em) {
+    .side-noticias {
+      text-align: left;
+      margin: 1em;
+      float: right;
+      width: 24%; } }
+
+.noticia-pq, .noticia-grande, .otrasnoticias {
+  text-align: left;
+  padding: 1em 2em;
+  background-color: white;
+  border: 1px solid #cccccc;
+  margin: 1em;
+  max-width: 650px; }
+  @media only screen and (min-width: 50em) {
+    .noticia-pq, .noticia-grande, .otrasnoticias {
+      max-width: none; } }
+  .noticia-pq .fecha, .noticia-grande .fecha, .otrasnoticias .fecha {
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: grey; }
+  .noticia-pq img, .noticia-grande img, .otrasnoticias img {
+    margin-bottom: 1em; }
+  .noticia-pq .texto-noti-pq, .noticia-grande .texto-noti-pq, .otrasnoticias .texto-noti-pq {
+    margin-bottom: 1em; }
+    .noticia-pq .texto-noti-pq p, .noticia-grande .texto-noti-pq p, .otrasnoticias .texto-noti-pq p {
+      margin-bottom: 1em; }
+
+.leermas {
+  font-size: 13px;
+  color: #344814; }
+  .leermas:hover {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5; }
+
+.noticia-grande {
+  margin-bottom: 0; }
+
+.otrasnoticias {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  margin-top: 0; }
+  .otrasnoticias > article {
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    width: 50%; }
+    .otrasnoticias > article:hover {
+      background-color: #cccccc; }
+  .otrasnoticias a {
+    margin: 0 2em;
+    line-height: 3em; }
+  .otrasnoticias .noti-siguiente {
+    border-right: 1px solid #cccccc;
+    text-align: right; }
 
 .r-tabs-anchor {
   color: white;

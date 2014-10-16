@@ -32,8 +32,8 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td >James nombre muy largo muy muy muy largo</td>
-				<td class="tipo-formato  selector">
+				<td class="nom-product">James nombre muy largo muy muy muy largo</td>
+				<td class="tipo-formato selector">
 						<select class="selector-opciones">
 						  <option value="volvo">James</option>
 						  <option value="saab">Saab</option>
@@ -41,17 +41,17 @@
 						  <option value="audi">Audi</option>
 						</select>
 				</td>
-				<td class="precio-uni right">5 €</td>
+				<td class="right">5 €</td>
 				<td class="unidades">
 					 <input type="number" min="0" max="99" placeholder="0">
 				</td>
-				<td>30,00 €</td>
+				<td class="right">30,00 €</td>
 				<td class="ico-borrar center">
 					<img class="icono-borrar" src="../images/borrar.svg" alt="borrar producto" title="borrar producto">
 				</td>
 			</tr>
 			<tr>
-				<td >James nombre largo </td>
+				<td class="nom-product">James nombre largo </td>
 				<td class="tipo-formato  selector">
 						<select class="selector-opciones">
 						  <option value="volvo">James</option>
@@ -60,17 +60,17 @@
 						  <option value="audi">Audi</option>
 						</select>
 				</td>
-				<td>5 €</td>
+				<td class="right">5 €</td>
 				<td class="unidades">
 					 <input type="number" min="0" max="99" placeholder="0">
 				</td>
-				<td>30,00 €</td>
+				<td class="right">30,00 €</td>
 				<td class="ico-borrar center">
-					<img class="icono-borrar" src="../images/borrar.svg" alt="borrar producto" title="borrar producto">
+					<img class="icono-borrar " src="../images/borrar.svg" alt="borrar producto" title="borrar producto">
 				</td>
 			</tr>
 			<tr>
-				<td >James nombre </td>
+				<td class="nom-product">James nombre </td>
 				<td class="tipo-formato  selector">
 						<select class="selector-opciones">
 						  <option value="volvo">James</option>
@@ -79,11 +79,11 @@
 						  <option value="audi">Audi</option>
 						</select>
 				</td>
-				<td>5 €</td>
+				<td class="right">5 €</td>
 				<td class="unidades">
 					 <input type="number" min="0" max="99" placeholder="0">
 				</td>
-				<td>30,00 €</td>
+				<td class="right">30,00 €</td>
 				<td class="ico-borrar center">
 					<img class="icono-borrar" src="../images/borrar.svg" alt="borrar producto" title="borrar producto">
 				</td>
@@ -98,12 +98,14 @@
 	<section class="recoger">
 		<h5 class="titular-lacesta">Selecciona tu forma de recogida</h5>
 	        <ul class="recoger-tienda">
-	            <li  >
+	            <li>
 	                <input class="css-checkbox" type="radio" name="recog" id="recoger-tienda" value="tienda">
 	                <label for="recoger-tienda" class="css-label">Recoger en tienda</label>
-	            </li> <li  >
+	            </li>
+	            <li>
 	                <input class="css-checkbox" type="radio" name="recog" id="recoger-por-correo" value="correo">
 	                <label for="recoger-por-correo" class="css-label">Envío por correo</label>
+	            </li>
 	        </ul>
 			<p >Gastos de envío: 00,00€</p>
 	</section>
