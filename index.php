@@ -8,6 +8,9 @@
 
 <body>
 
+<?php  
+	require($dir."avisos.php");
+?>
 
 
 <?php  
@@ -18,7 +21,7 @@
 
 <section class="cabecera_inicio">
 	<article class="cabecera_texto">
-		<h2>En la Boutique del Té</h2>
+		<h1 class="h2">En la Boutique del Té</h1>
 		<h3>somos especialistas en un solo producto:
 			Té de alta calidad de todos los rincones del mundo
 		</h3>
@@ -26,7 +29,7 @@
 </section>
 
 <article class="contenedor titular-seccion ">
-	<h3 class="titular-destacado"><span>Productos destacados</span></h3>
+	<h4 class="titular-destacado"><span>Productos destacados</span></h4>
 </article>
 
 <section class="destacados contenedor">
@@ -64,7 +67,7 @@
 
 
 <article class="contenedor titular-seccion ">
-	<h3 class="titular-destacado"><span>Últimas noticias</span></h3>
+	<h4 class="titular-destacado"><span>Últimas noticias</span></h4>
 </article>
 
 <section class="ultimas-noticias contenedor">

@@ -39,6 +39,7 @@
 	width: 100%; 
 	border-collapse: collapse; 
 	background-color: white;
+	margin-bottom: 2em;
 	
 
 
@@ -306,15 +307,15 @@
 		   color: black;  
 		}
 	}
-	.confirmar{
-		text-transform: inherit;
-		font-family: inherit;
-		max-width: 200px;
-		display: table;
-		margin:0 auto;
-		padding:0.5em;
-		border: none;
-		font-family: $baseheadingfont;
-	}
 
+}
+.confirmar{
+	text-transform: inherit;
+	font-family: inherit;
+	max-width: 200px;
+	display: table;
+	margin:0 auto;
+	padding:0.5em !important;
+	border: none !important;
+	font-family: $baseheadingfont !important;
 }

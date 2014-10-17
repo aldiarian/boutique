@@ -13,45 +13,34 @@
 	require($dir."menuprincipal.php");
 ?>
 
+
+
 <section class="cabecera_inicio cabecera_latienda contenedor">
 	<article class="cabecera_texto">
-		<h1 class="h2">La Tienda</h1>
+		<h1 class="h2">Contacto</h1>
 	</article>
 </section>
 <article class="contenedor titular-seccion ">
-	<h4 class="titular-destacado"><span>Un poquito de historia</span></h4>
+	<h4 class="titular-destacado"><span>Mándanos un mail</span></h4>
 </article>
+	<section class="datosenvio form-contacto">
+			<form action="">
+				<ul>
+					<li>
+						<input name="nombre" type="text" placeholder="Nombre *" required>
+					</li>
+					<li><input type="text" placeholder="Apellidos *" required></li>
+					<li><input type="tel" placeholder="Mail *" required></li>
+					<li>
+						<textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí tu mensaje"></textarea>
+					</li>
+				</ul>
+			</form>
+			<button class="btn centro">Enviar</button>
+	</section>
 
 <section class=" cont_latienda contenedor">
-	<section class="latienda_texto">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quidem quisquam eaque perspiciatis tempora eum, atque ipsam repellat laborum natus porro eveniet similique repellendus ea sint quasi facilis, saepe ducimus.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eaque consectetur, placeat laudantium tenetur recusandae. Architecto minima, optio, animi consequatur fugit modi ipsam, cum mollitia inventore aperiam ea. Sed, ipsam. </p>	
-	</section>
-	<section class="latienda_galeria">
-		<ul id="lightGallery" class="galeria_latienda">
-			<li data-src="http://lorempixel.com/800/450/" data-responsive-src="http://lorempixel.com/250/185/">
-				<a href="#">
-					<img src="http://lorempixel.com/250/185/" alt="">
-				</a>
-			</li>
-			<li data-src="http://lorempixel.com/800/450/" data-responsive-src="http://lorempixel.com/250/185/">
-				<a href="#">
-					<img src="http://lorempixel.com/250/185/" alt="">
-				</a>
-			</li>
-			<li data-src="http://lorempixel.com/800/450/" data-responsive-src="http://lorempixel.com/250/185/">
-				<a href="#">
-					<img src="http://lorempixel.com/250/185/" alt="">
-				</a>
-			</li>
-			<li data-src="http://lorempixel.com/800/450/" data-responsive-src="http://lorempixel.com/250/185/">
-				<a href="#">
-					<img src="http://lorempixel.com/250/185/" alt="">
-				</a>
-			</li>
-			
-		</ul>
-	</section>
+	
 </section>
 
 <article class="contenedor titular-seccion ">
@@ -109,7 +98,7 @@
 <script>
     jQuery(document).ready(function($) {
         $(".menu-principal-cabecera a").removeClass('activo');
-        $(".latienda").addClass('activo')
+        $(".contacto").addClass('activo')
     });
 </script>
 

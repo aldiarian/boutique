@@ -87,6 +87,10 @@ p{
 .tres{
 	width: 33.333333%;
 }
+.centro{
+	display: table;
+	margin:0 auto;
+}
 
 
 /*------------------------------------*\
@@ -339,6 +343,7 @@ p{
 	.cabecera_texto{
 		padding:2em 4em;
 		width: inherit;
+		margin-bottom: 0;
 	}
 }
 
@@ -346,14 +351,14 @@ p{
 	width: 90%;
 	max-width: 400px;
 	margin:0 auto;
+	margin-bottom: 0;
 	padding:2em;
 	border:2px solid white;
 	background-color: $basecolor_1 ;
 	color:white;
 	text-align: center;
 	opacity: 0.9;
-	h2{
-		@extend h1;
+	h1{
 		margin-bottom: 0;
 	}
 	h3{
@@ -403,7 +408,7 @@ p{
 	font-weight: 300;
 	background-color: $claro_1;
 	margin:0;
-	padding: 0 1em;
+	padding: 0.2em 1em;
 	display: inline-block;
 	position: relative;
 	z-index: 5;
@@ -468,6 +473,45 @@ p{
 
 }
 
+
+/*------------------------------------*\
+	$CONTACTO
+\*------------------------------------*/
+.contacto{
+}
+.form-contacto{
+	padding:1em;
+	margin-bottom: 2em;
+}
+
+/*------------------------------------*\
+	$AVISOS
+\*------------------------------------*/
+
+.avisos{
+	background: $basecolor_1;
+	color: white;
+	padding:2em 4em;
+	text-align: center;
+	font-family: $baseheadingfont;
+	@include font-size(14);
+	border:1em solid $basecolor_1;
+	box-shadow: 0 0 0 1px $claro_1 inset;
+	position: relative;
+	p{
+		margin-bottom: 0;
+	}
+	.aviso{
+		font-family: $baseheadingfont ;
+	}
+	.avisos-borrar{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top:10px;
+		right: 12px;
+	}
+}
 
 /*------------------------------------*\
     $FOOTER
@@ -541,3 +585,5 @@ footer{
 		}
 		margin-bottom: 2em;
 }
+
+

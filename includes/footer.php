@@ -36,7 +36,7 @@
 			<li><a href="index.php">INICIO</a></li>
 			<li><a href="productos.php">PRODUCTOS</a></li>			
 			<li><a href="latienda.php">LA TIENDA</a></li>
-			<li><a href="">CONTACTO</a></li>			
+			<li><a href="contacto.php">CONTACTO</a></li>			
 			<li><a href="noticias.php">NOTICIAS</a></li>
 		</ul>
 

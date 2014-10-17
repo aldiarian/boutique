@@ -26,7 +26,7 @@
 						<li><a class="index" href="index.php">INICIO</a></li>
 						<li><a class="productos" href="productos.php">PRODUCTOS</a></li>
 						<li><a class="latienda" href="latienda.php">LA TIENDA</a></li>
-						<li><a class="contacto" href="javascript:void(0)">CONTACTO</a></li>
+						<li><a class="contacto" href="contacto.php">CONTACTO</a></li>
 						<li><a class="noticias" href="noticias.php">NOTICIAS</a></li>
 						<div class="nav_direcciones">
 							<li>
