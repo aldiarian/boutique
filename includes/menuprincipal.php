@@ -4,7 +4,7 @@
 			<nav>
 				<ul class="nav--fit">
 					<div class="grupo_uno">
-						<li><a href="javascript:void(0)">¿Tienes cuenta?</a></li>
+						<li><a href="acceso-registro.php">¿Tienes cuenta?</a></li>
 						<li><a class="tucesta__link" href="lacesta.php">tu cesta (0)</a></li>
 					</div>
 					<div class="grupo_dos">
