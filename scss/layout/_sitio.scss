@@ -514,6 +514,28 @@ p{
 }
 
 /*------------------------------------*\
+	404
+\*------------------------------------*/
+
+.error404{
+	text-align: center;
+	margin:5em 0;
+	h1{
+		@include font-size(60);
+		line-height: 0.5em;
+	}
+	a{
+		text-decoration: underline;
+	}
+	
+	@media only screen and (min-width : $bp2){
+		img{
+			max-width: 500px;
+		}
+	}
+}
+
+/*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 

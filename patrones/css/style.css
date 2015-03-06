@@ -1298,6 +1298,22 @@ p {
     right: 12px; }
 
 /*------------------------------------*\
+	404
+\*------------------------------------*/
+.error404 {
+  text-align: center;
+  margin: 5em 0; }
+  .error404 h1 {
+    font-size: 60px;
+    font-size: 3.75rem;
+    line-height: 0.5em; }
+  .error404 a {
+    text-decoration: underline; }
+  @media only screen and (min-width: 37.5em) {
+    .error404 img {
+      max-width: 500px; } }
+
+/*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 footer {
@@ -1568,10 +1584,10 @@ section {
   content: "lato"; }
 
 .altfont::after {
-  content: 'Georgia, Times, "Times New Roman"'; }
+  content: "Georgia, Times, Times New Roman"; }
 
 .code::after {
-  content: '"Courier New", monospace'; }
+  content: "Courier New, monospace"; }
 
 .swatch {
   margin: 1%;

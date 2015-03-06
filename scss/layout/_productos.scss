@@ -74,10 +74,13 @@ label.css-label {
 
 #horizontalTab{
   padding: 0 1em 2em 1em;
+  max-width: 780px;
+  margin: 0 auto !important;
   div[id*="tab-"]{
     max-width: 780px;
     margin: 0 auto;
     padding: 2em;
+    background-color: white;
     border:1px solid $basecolor_osc;
     h5{
       line-height: 1.3em;

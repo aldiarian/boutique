@@ -48,18 +48,23 @@
 <meta name="msapplication-TileColor" content="#000">
 <meta http-equiv="cleartype" content="on">
 
+<!-- jquery-->
+<script src="js/jquery-1.9.1.min.js"></script>
 
 <!-- fuentes google fonts -->
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <!-- lightgallery -->
-<link type="text/css" rel="stylesheet" href="js/lightGallery/src/css/lightGallery.css" />                    
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="js/lightGallery/src/css/lightGallery.css" />
 <script src="js/lightGallery/src/js/lightGallery.js"></script>
+               
+<!-- esasyResposiveTabs -->
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
 
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="js/easyResponsiveTabs.js"></script>
 
 
 

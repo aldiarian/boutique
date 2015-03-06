@@ -8,9 +8,7 @@
 
 <body>
 
-<?php  
-	require($dir."avisos.php");
-?>
+
 
 
 <?php  
