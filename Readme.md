@@ -2,6 +2,7 @@
 
 ### Configuración:
 
+∫
 #### style.scss
 Configura primeramente el archivo `scss/style.scss` con los archivos que quieres incluir.
 Si no quieres incluir el archivo _fuentes.scss porque no los vas a usar o cualquiero otro
